@@ -1,113 +1,230 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# [Material Dashboard React](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fcreativetimofficial.github.io%2Fmaterial-dashboard-react&text=Material%20Dashboard%20React%20-%20Free%20Bootstrap%20Admin%20Template&original_referer=https%3A%2F%2Fdemos.creative-tim.com%2Fmaterial-dashboard-react%2F%3F_ga%3D2.10428917.198078103.1532329372-1803433978.1528781151&via=creativetim&hashtags=react%2Cmaterial-ui)
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
 
----
+![version](https://img.shields.io/badge/version-1.6.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-dashboard-react.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-dashboard-react.svg?maxAge=2592000)]() [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim/material-dashboard?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
-## Edit a file
+![Product Gif](src/assets/github/md-react.gif)
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Material Dashboard React is a free Material-UI Admin with a fresh, new design inspired by Google's Material Design. We are very excited to introduce our take on the material concepts through an easy to use and beautiful set of components. Material Dashboard React was built over the popular Material-UI framework.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Material Dashboard React makes use of light, surface and movement. The general layout resembles sheets of paper following multiple different layers, so that the depth and order is obvious. The navigation stays mainly on the left sidebar and the content is on the right inside the main panel.
 
----
+Material Dashboard React comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
 
-## Create a file
+Material Dashboard React was created using [create-react-app](https://github.com/facebook/create-react-app) and it uses a framework built by our friend [Olivier - Material-UI v3.1.0](https://github.com/mui-org/material-ui), who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.
 
-Next, you’ll add a new file to this repository.
+Special thanks go to:
++ [React-chartist](https://github.com/fraserxu/react-chartist) for the wonderful charts.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+We are very excited to share this dashboard with you and we look forward to hearing your feedback!
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+You can find the Github Repo here.
 
----
+## Table of Contents
 
-## Clone a repository
+* [Versions](#versions)
+* [Demo](#demo)
+* [Quick Start](#quick-start)
+* [Documentation](#documentation)
+* [File Structure](#file-structure)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+* [Reporting Issues](#reporting-issues)
+* [Technical Support or Questions](#technical-support-or-questions)
+* [Licensing](#licensing)
+* [Useful Links](#useful-links)
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+## Versions
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[<img src="src/assets/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard)
+[<img src="src/assets/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-react)
+[<img src="src/assets/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard)
+[<img src="src/assets/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/material-dashboard-angular2)
 
-## Available Scripts
 
-In the project directory, you can run:
+| HTML | React | Vue | Angular |
+| --- | --- | --- | --- |
+| [![Material Dashboard HTML](src/assets/github/opt_md_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard) | [![Material Dashboard React](src/assets/github/opt_mdr_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-react) | [![Vue Material Dashboard ](src/assets/github/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard) | [![Material Dashboard Angular](src/assets/github/opt_md_angular_thumbnail.jpg)](https://www.creative-tim.com/product/material-dashboard-angular2)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| Dashboard | User Profile | Tables | Maps | Notification |
+| --- | --- | --- | --- | --- |
+| [![Start page](src/assets/github/dashboard.png)](https://demos.creative-tim.com/material-dashboard-react/#/dashboard) | [![User profile page](src/assets/github/user_profile.png)](https://demos.creative-tim.com/material-dashboard-react/#/user) | [![Tables page ](src/assets/github/tables.png)](https://demos.creative-tim.com/material-dashboard-react/#/table) | [![Maps Page](src/assets/github/maps.png)](https://demos.creative-tim.com/material-dashboard-react/#/maps) | [![Notification page](src/assets/github/notification.png)](https://demos.creative-tim.com/material-dashboard-react/#/notifications)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+[View More](https://demos.creative-tim.com/material-dashboard-react/#/dashboard).
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Quick start
 
-### `npm run build`
+Quick start options:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `npm i material-dashboard-react`
+- Clone the repo: `git clone https://github.com/creativetimofficial/material-dashboard-react.git`.
+- [Download from Github](https://github.com/creativetimofficial/material-dashboard-react/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/material-dashboard-react).
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Documentation
+The documentation for the Material Dashboard React is hosted at our [website](https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## File Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Within the download you'll find the following directories and files:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+material-dashboard-react
+.
+├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── bower.json
+├── package.json
+├── documentation
+│   ├── assets
+│   └── tutorial-components.html
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── index.js
+    ├── logo.svg
+    ├── routes.js
+    ├── assets
+    │   ├── css
+    │   ├── github
+    │   ├── img
+    │   │   └── faces
+    │   └── jss
+    │       ├── material-dashboard-react
+    │       │   ├── components
+    │       │   ├── layouts
+    │       │   └── views
+    │       └── material-dashboard-react.jsx
+    ├── components
+    │   ├── Card
+    │   │   ├── Card.jsx
+    │   │   ├── CardAvatar.jsx
+    │   │   ├── CardBody.jsx
+    │   │   ├── CardFooter.jsx
+    │   │   ├── CardHeader.jsx
+    │   │   └── CardIcon.jsx
+    │   ├── CustomButtons
+    │   │   └── Button.jsx
+    │   ├── CustomInput
+    │   │   └── CustomInput.jsx
+    │   ├── CustomTabs
+    │   │   └── CustomTabs.jsx
+    │   ├── FixedPlugin
+    │   │   └── FixedPlugin.jsx
+    │   ├── Footer
+    │   │   └── Footer.jsx
+    │   ├── Grid
+    │   │   ├── GridContainer.jsx
+    │   │   └── GridItem.jsx
+    │   ├── Navbars
+    │   │   ├── AdminNavbarLinks.jsx
+    │   │   ├── Navbar.jsx
+    │   │   └── RTLNavbarLinks.jsx
+    │   ├── Sidebar
+    │   │   └── Sidebar.jsx
+    │   ├── Snackbar
+    │   │   ├── Snackbar.jsx
+    │   │   └── SnackbarContent.jsx
+    │   ├── Table
+    │   │   └── Table.jsx
+    │   ├── Tasks
+    │   │   └── Tasks.jsx
+    │   └── Typography
+    │       ├── Danger.jsx
+    │       ├── Info.jsx
+    │       ├── Muted.jsx
+    │       ├── Primary.jsx
+    │       ├── Quote.jsx
+    │       ├── Success.jsx
+    │       └── Warning.jsx
+    ├── layouts
+    │   ├── Admin.jsx
+    │   └── RTL.jsx
+    ├── variables
+    │   ├── charts.jsx
+    │   └── general.jsx
+    └── views
+        ├── Dashboard
+        │   └── Dashboard.jsx
+        ├── Icons
+        │   └── Icons.jsx
+        ├── Maps
+        │   └── Maps.jsx
+        ├── Notifications
+        │   └── Notifications.jsx
+        ├── RTLPage
+        │   └── RTLPage.jsx
+        ├── TableList
+        │   └── TableList.jsx
+        ├── Typography
+        │   └── Typography.jsx
+        ├── UpgradeToPro
+        │   └── UpgradeToPro.jsx
+        └── UserProfile
+            └── UserProfile.jsx
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Browser Support
 
-## Learn More
+At present, we officially aim to support the last two versions of the following browsers:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="src/assets/github/chrome.png" width="64" height="64"> <img src="src/assets/github/firefox.png" width="64" height="64"> <img src="src/assets/github/edge.png" width="64" height="64"> <img src="src/assets/github/safari.png" width="64" height="64"> <img src="src/assets/github/opera.png" width="64" height="64">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Resources
+- Demo: https://demos.creative-tim.com/material-dashboard-react
+- Download Page: https://www.creative-tim.com/product/material-dashboard-react
+- Documentation: https://demos.creative-tim.com/material-dashboard-react/#/documentation/tutorial
+- License Agreement: https://www.creative-tim.com/license
+- Support: https://www.creative-tim.com/contact-us
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/material-dashboard-react/issues)
+- [Material Kit React - For Front End Development](https://www.creative-tim.com/product/material-kit-react?ref=github-mdr-free)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Reporting Issues
+We use GitHub Issues as the official bug tracker for the Material Dashboard React. Here are some advices for our users that want to report an issue:
 
-### Analyzing the Bundle Size
+1. Make sure that you are using the latest version of the Material Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
+2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
+3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Technical Support or Questions
 
-### Making a Progressive Web App
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Licensing
 
-### Advanced Configuration
+- Copyright 2018 Creative Tim (https://www.creative-tim.com)
+- Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Useful Links
 
-### Deployment
+More products from Creative Tim: <https://www.creative-tim.com/products>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-### `npm run build` fails to minify
+Freebies: <https://www.creative-tim.com/products>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
+
+Social Media:
+
+Twitter: <https://twitter.com/CreativeTim>
+
+Facebook: <https://www.facebook.com/CreativeTim>
+
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>

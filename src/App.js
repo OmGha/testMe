@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import NavBar from './components/navBar/navBar';
+import { Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar />
+        <Container>
+          <Row>
+            <Col>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
