@@ -19,24 +19,24 @@ import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
 const dashboardRoutes = [
 
 //STUDENT'S DASHBOARD
-  {
-   path: "/dashboard",
-   name: "Dashboard",
-   rtlName: "لوحة القيادة",
-   icon: Dashboard,
-   component: StudentDashboardPage,
-   layout: "/admin"
-   },
+  // {
+  //  path: "/dashboard",
+  //  name: "Dashboard",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: StudentDashboardPage,
+  //  layout: "/admin"
+  //  },
 
 //INSTRUCTOR'S DASHBOARD
-    // {
-    //     path: "/dashboard",
-    //     name: "Dashboard",
-    //     rtlName: "لوحة القيادة",
-    //     icon: Dashboard,
-    //     component: InstructorDashboardPage,
-    //     layout: "/admin"
-    // },
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: InstructorDashboardPage,
+        layout: "/admin"
+    },
 //optional
   // {
   //   path: "/user",
@@ -48,15 +48,15 @@ const dashboardRoutes = [
   // },
 
   //STUDENT'S COURSESLIST
-  {
-    path: "/CoursesList",
-    name: "Courses List",
-    rtlName: "قائمة الجدول",
-    icon: "content_paste",
-    component: StudentCoursesList,
-    layout: "/admin"
+//   {
+//     path: "/CoursesList",
+//     name: "Courses List",
+//     rtlName: "قائمة الجدول",
+//     icon: "content_paste",
+//     component: StudentCoursesList,
+//     layout: "/admin"
 
-},
+// },
 
 //STUDENT'S EXAM
 {
@@ -73,14 +73,14 @@ const dashboardRoutes = [
  
 
 //INSTRUCTOR'S QB
-  // {
-  //   path: "/QuestionBank",
-  //   name: "Question Bank",
-  //   rtlName: "بنك الأسئلة",
-  //   icon: "content_paste",
-  //   component: QuestionBank,
-  //   layout: "/admin"
-  // }
+  {
+    path: "/QuestionBank",
+    name: "Question Bank",
+    rtlName: "بنك الأسئلة",
+    icon: "content_paste",
+    component: QuestionBank,
+    layout: "/admin"
+  }
   //{
   //  path: "/icons",
   //  name: "Icons",
