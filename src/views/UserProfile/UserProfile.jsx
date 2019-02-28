@@ -13,7 +13,7 @@ import CardAvatar from "components/Card/CardAvatar.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "assets/img/faces/man.png";
 
 const styles = {
   cardCategoryWhite: {
@@ -43,13 +43,12 @@ function UserProfile(props) {
           <Card>
             <CardHeader color="primary">
               <h4 className={classes.cardTitleWhite}>Edit Profile</h4>
-              <p className={classes.cardCategoryWhite}>Complete your profile</p>
             </CardHeader>
             <CardBody>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={5}>
                   <CustomInput
-                    labelText="Company (disabled)"
+                    labelText="Department (CS)"
                     id="company-disabled"
                     formControlProps={{
                       fullWidth: true
@@ -65,6 +64,9 @@ function UserProfile(props) {
                     id="username"
                     formControlProps={{
                       fullWidth: true
+                    }}
+                    inputProps={{
+                      disabled: true
                     }}
                   />
                 </GridItem>
@@ -98,40 +100,12 @@ function UserProfile(props) {
                   />
                 </GridItem>
               </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="City"
-                    id="city"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Country"
-                    id="country"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Postal Code"
-                    id="postal-code"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </GridContainer>
+            
               <GridContainer>
                 <GridItem xs={12} sm={12} md={12}>
-                  <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
+                  
                   <CustomInput
-                    labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                    labelText="Bio"
                     id="about-me"
                     formControlProps={{
                       fullWidth: true
@@ -157,16 +131,16 @@ function UserProfile(props) {
               </a>
             </CardAvatar>
             <CardBody profile>
-              <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
-              <h4 className={classes.cardTitle}>Alec Thompson</h4>
+              <h6 className={classes.cardCategory}>STUDENT / STUDENT ACTIVITY</h6>
+              <h4 className={classes.cardTitle}>Name</h4>
               <p className={classes.description}>
-                Don't be scared of the truth because we need to restart the
-                human foundation in truth And I love you like Kanye loves Kanye
-                I love Rick Owens’ bed design but the back is...
+              A third year Computer Science student specializing in the Software engineering stream at New Cairo Academy. I have a great
+              interest in open source development and learning new programming laguages. Began programming during high school 
+              and has since expanded my languages to Java, Python, JavaScript and
+              C#. In my spare time I enjoy watching movies and playing 
+              Guitar and Piano.
               </p>
-              <Button color="primary" round>
-                Follow
-              </Button>
+            
             </CardBody>
           </Card>
         </GridItem>
