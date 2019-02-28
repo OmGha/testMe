@@ -59,85 +59,26 @@ class InstructorDashboard extends React.Component {
             <div>
                
                 <GridContainer>
-                    <GridItem xs={12} sm={12} md={12}>
-                        <CustomTabs
-                            title="Courses:"
-                            headerColor="primary"
-                            tabs={[
-                                {
-                                    tabName: "System Analysis",
-                                    tabIcon: Assessment,
-                                    tabContent: (
-                                        
-                                        <Table
+                <GridItem xs={12} sm={12} md={12}>
+        <Card>
+          <CardHeader color="primary">
+            <h4 className={classes.cardTitleWhite}>Courses</h4>
+          </CardHeader>
+          <CardBody>
+            <Table
+              tableHeaderColor="primary"
+              tableHead={["ID", "Title", "Department", "Level", "Branch", "Hours/Week"]}
               tableData={[
-                ["Department: ", "Computer Science"],
-                                        ["Level: ", "2"],
-                                        ["Branch: ", "English"],
-                                        ["Hours/Week: ", "3"]  
+                ["1", "System Analysis", "Computer Science", "1", "English", "3"],
+                ["2", "System Design", "Computer Science", "3", "English", "3"],
+                ["3", "تصميم النظم", "Information System", "3", "Arabic", "3"],
+                ["4", "Expert Systems", "Computer Science", "4", "English", "3"]
               ]}
             />
-                                     
-                                    )
-                                },
-                                {
-                                    tabName: "System Design",
-                                    tabIcon: Code,
-                                    tabContent: (
-                                        <Tasks
-                                            checkedIndexes={[0]}
-                                            tasksIndexes={[0, 1]}
-                                            tasks={SystemDesign}
-                                        />
-                                    )
-                                },
-                                {
-                                    tabName: "تصميم النظم",
-                                    tabIcon: Code,
-                                    tabContent: (
-                                        <Tasks
-                                            checkedIndexes={[0]}
-                                            tasksIndexes={[0, 1]}
-                                            tasks={SystemDesignA}
-                                        />
-                                    )
-                                },
-                                {
-                                    tabName: "Expert Systems",
-                                    tabIcon: Subject,
-                                    tabContent: (
-                                        <Tasks
-                                            checkedIndexes={[1]}
-                                            tasksIndexes={[0, 1, 2]}
-                                            tasks={ExpertSystems}
-                                        />
-                                    )
-                                }
-                            ]}
-                        />
-                    </GridItem>
-                    <GridItem xs={12} sm={12} md={6}>
-                        <Card>
-                            <CardHeader color="warning">
-                                <h4 className={classes.cardTitleWhite}>Employees Stats</h4>
-                                <p className={classes.cardCategoryWhite}>
-                                    New employees on 15th September, 2016
-                </p>
-                            </CardHeader>
-                            <CardBody>
-                                <Table
-                                    tableHeaderColor="warning"
-                                    tableHead={["ID", "Name", "Salary", "Country"]}
-                                    tableData={[
-                                        ["1", "Dakota Rice", "$36,738", "Niger"],
-                                        ["2", "Minerva Hooper", "$23,789", "Cura�ao"],
-                                        ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                                        ["4", "Philip Chaney", "$38,735", "Korea, South"]
-                                    ]}
-                                />
-                            </CardBody>
-                        </Card>
-                    </GridItem>
+          </CardBody>
+        </Card>
+      </GridItem>
+                  
                 </GridContainer>
             </div>
         );

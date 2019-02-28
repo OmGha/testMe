@@ -53,7 +53,8 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.
+            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
+</div>
           <Button color="warning">View and Edit</Button>
           </CardBody>
         </Card>
@@ -61,13 +62,14 @@ function QuestionBank (props) {
       <GridItem xs={12} sm={6} md={4}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>System Analysis</h4>
+            <h4 className={classes.cardTitleWhite}>System Design</h4>
             <p className={classes.cardCategoryWhite}>
-              Computer Science, Secound Year
+              Computer Science, Third Year
             </p>
           </CardHeader>
           <CardBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.
+            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
+</div>
             <Button color="primary">View and Edit</Button>
           </CardBody>
         </Card>
@@ -75,42 +77,34 @@ function QuestionBank (props) {
       <GridItem xs={12} sm={6} md={4}>
         <Card>
           <CardHeader color="danger">
-            <h4 className={classes.cardTitleWhite}>System Analysis</h4>
+            <h4 className={classes.cardTitleWhite}>تصميم النظم</h4>
             <p className={classes.cardCategoryWhite}>
-              Computer Science, Secound Year
+              Information System, Third Year
             </p>
           </CardHeader>
           <CardBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="danger">View and Edit</Button>
+            <div>Description Description Description Description Description Description Description Description Description Description            
+</div>
+          <Button color="danger">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
       <GridItem xs={12} sm={6} md={4}>
         <Card>
           <CardHeader color="info">
-            <h4 className={classes.cardTitleWhite}>System Analysis</h4>
+            <h4 className={classes.cardTitleWhite}>Expert Systems</h4>
             <p className={classes.cardCategoryWhite}>
-              Computer Science, Secound Year
+              Computer Science, Fourth Year
             </p>
           </CardHeader>
           <CardBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="info">View and Edit</Button>
+            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
+</div>
+          <Button color="info">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
-      <GridItem xs={12} sm={6} md={4}>
-        <Card>
-          <CardHeader color="success">
-            <h4 className={classes.cardTitleWhite}>System Analysis</h4>
-            <p className={classes.cardCategoryWhite}>
-              Computer Science, Secound Year
-            </p>
-          </CardHeader>
-          <CardBody>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="success">View and Edit</Button>
-          </CardBody>
-        </Card>
-      </GridItem>
+    
     </GridContainer>
   );
 }

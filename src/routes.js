@@ -58,15 +58,15 @@ const dashboardRoutes = [
 // },
 
  //INSTRUCTOR'S COURSESLIST
- {
-  path: "/CoursesList",
-  name: "Courses List",
-  rtlName: "قائمة الجدول",
-  icon: "content_paste",
-  component: InstructorCoursesList,
-  layout: "/admin"
+//  {
+//   path: "/CoursesList",
+//   name: "Courses List",
+//   rtlName: "قائمة الجدول",
+//   icon: "content_paste",
+//   component: InstructorCoursesList,
+//   layout: "/admin"
 
-},
+// },
 
 //INSTRUCTOR'S QB
   {
