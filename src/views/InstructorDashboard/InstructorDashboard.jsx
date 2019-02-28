@@ -32,7 +32,7 @@ import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 
-import { bugs, website, server } from "variables/general.jsx";
+import { SystemAnalysis, SystemDesign, SystemDesignA, ExpertSystems } from "variables/general.jsx";
 
 import {
     dailySalesChart,
@@ -59,7 +59,7 @@ class InstructorDashboard extends React.Component {
             <div>
                
                 <GridContainer>
-                    <GridItem xs={12} sm={12} md={6}>
+                    <GridItem xs={12} sm={12} md={12}>
                         <CustomTabs
                             title="Courses:"
                             headerColor="primary"
@@ -68,11 +68,16 @@ class InstructorDashboard extends React.Component {
                                     tabName: "System Analysis",
                                     tabIcon: Assessment,
                                     tabContent: (
-                                        <Tasks
-                                            checkedIndexes={[0, 3]}
-                                            tasksIndexes={[0, 1, 2, 3]}
-                                            tasks={bugs}
-                                        />
+                                        
+                                        <Table
+              tableData={[
+                ["Department: ", "Computer Science"],
+                                        ["Level: ", "2"],
+                                        ["Branch: ", "English"],
+                                        ["Hours/Week: ", "3"]  
+              ]}
+            />
+                                     
                                     )
                                 },
                                 {
@@ -82,18 +87,29 @@ class InstructorDashboard extends React.Component {
                                         <Tasks
                                             checkedIndexes={[0]}
                                             tasksIndexes={[0, 1]}
-                                            tasks={website}
+                                            tasks={SystemDesign}
                                         />
                                     )
                                 },
                                 {
-                                    tabName: "Expert System",
+                                    tabName: "تصميم النظم",
+                                    tabIcon: Code,
+                                    tabContent: (
+                                        <Tasks
+                                            checkedIndexes={[0]}
+                                            tasksIndexes={[0, 1]}
+                                            tasks={SystemDesignA}
+                                        />
+                                    )
+                                },
+                                {
+                                    tabName: "Expert Systems",
                                     tabIcon: Subject,
                                     tabContent: (
                                         <Tasks
                                             checkedIndexes={[1]}
                                             tasksIndexes={[0, 1, 2]}
-                                            tasks={server}
+                                            tasks={ExpertSystems}
                                         />
                                     )
                                 }
