@@ -1,5 +1,6 @@
 import {
   primaryColor,
+  successColor,
   blackColor,
   hexToRgb
 } from "assets/jss/material-dashboard-react.jsx";
@@ -8,8 +9,11 @@ const checkboxAdnRadioStyle = {
   root: {
     padding: "13px"
   },
+  textCenter: {
+    textAlign: "center"
+  },
   checked: {
-    color: primaryColor[0] + "!important"
+    color: successColor[0] + "!important"
   },
   checkedIcon: {
     width: "20px",

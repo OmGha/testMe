@@ -56,7 +56,7 @@ function StudentCoursesList(props) {
                                 tableHead={["ID", "Name", "Department", "Teached By", "Hours/Week"]}
                             tableData={[
                                 ["1", "System Analysis", "Computer Science", "Dr. Gamal Tharwat", "3"],
-                                ["2", "Database", "Computer Science", "Dr.Hessin Karam ", "3"],
+                                ["2", "Database", "Computer Science", "Dr. Hessin Karam ", "3"],
                                 ["3", "Software Engineering", "Computer Science", "Dr. Fouaad Shedid", "3"],
                                 ["4", "Logic Programming", "Computer Science", "Dr. Noha El Qady", "3"],
                                 ["5", "Operating Systems", "Computer Science", "Dr. Kamal Hefny", "3"]

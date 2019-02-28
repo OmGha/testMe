@@ -1,241 +1,297 @@
 import React from "react";
-import PropTypes from "prop-types";
-// react plugin for creating charts
-import ChartistGraph from "react-chartist";
-// @material-ui/core
+import PropTypes from 'prop-types';
+// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Button from "components/CustomButtons/Button.jsx";
-import Icon from "@material-ui/core/Icon";
-// @material-ui/icons
-import ArrowLeft from "@material-ui/icons/ArrowLeft";
-import Store from "@material-ui/icons/Store";
-import Warning from "@material-ui/icons/Warning";
-import DateRange from "@material-ui/icons/DateRange";
-import LocalOffer from "@material-ui/icons/LocalOffer";
-import Update from "@material-ui/icons/Update";
-import ArrowUpward from "@material-ui/icons/ArrowUpward";
-import AccessTime from "@material-ui/icons/AccessTime";
-import Accessibility from "@material-ui/icons/Accessibility";
-import BugReport from "@material-ui/icons/BugReport";
-import Code from "@material-ui/icons/Code";
-import Cloud from "@material-ui/icons/Cloud";
 // core components
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import Table from "components/Table/Table.jsx";
-import Tasks from "components/Tasks/Tasks.jsx";
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
-import Danger from "components/Typography/Danger.jsx";
-import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import CardIcon from "components/Card/CardIcon.jsx";
+import Button from "components/CustomButtons/Button.jsx";
+import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-
-import { bugs, website, server } from "variables/general.jsx";
-
-import {
-  dailySalesChart,
-  emailsSubscriptionChart,
-  completedTasksChart
-} from "variables/charts.jsx";
-
-import dashboardStyle from "assets/jss/material-dashboard-react/views/dashboardStyle.jsx";
+import Muted from "components/Typography/Muted.jsx";
+import Info from "components/Typography/Info.jsx";
+import Countdown from 'components/Countdown/Countdown.js';
+import Checkbox from "@material-ui/core/Checkbox";
+// @material-ui/icons
+import Check from "@material-ui/icons/Check";
 import Radio from "@material-ui/core/Radio";
 // @material-ui/icons
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 //core components
 import checkboxAdnRadioStyle from "assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx";
-//core components
-import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
-import Checkbox from "@material-ui/core/Checkbox";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
-//core components
-class StudentExam extends React.Component {
-  // state = {
-  //   value: 0
-  // };
-  // handleChange = (event, value) => {
-  //   this.setState({ value });
-  // };
-  state = {
-    selectedValue: null,
-  };
-  handleChangeIndex = index => {
-    this.setState({ value: index });
-  };
+import NavigateBefore from "@material-ui/icons/NavigateBefore";
+import NavigateNext from "@material-ui/icons/NavigateNext";
 
-  handleChange = event => {
-    this.setState({ selectedValue: event.target.value });
-  };
-  handleToggle = value => () => {
+
+import {
+  cardTitle,
+  cardSubtitle,
+  cardLink
+} from "assets/jss/material-dashboard-react.jsx";
+import { IconButton } from "@material-ui/core";
+
+const styles = {
+  cardTitle,
+  cardSubtitle,
+  cardLink,
+  textCenter: {
+    textAlign: "center"
+  }
+};
+
+
+
+
+class StudentExam extends React.Component {
+
+  state = {
+    checked: [],
+    selectedValue: null
+};
+handleToggle = value => () => {
     const { checked } = this.state;
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+        newChecked.push(value);
     } else {
-      newChecked.splice(currentIndex, 1);
+        newChecked.splice(currentIndex, 1);
     }
 
     this.setState({
-      checked: newChecked,
+        checked: newChecked,
     });
-  };
-  render() {
-    const { classes } = this.props;
-    return (
-      <div>
-        <GridContainer>
+};
 
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
-          <Checkbox
-            tabIndex={-1}
-            onClick={this.handleToggle(1)}
-            checkedIcon={<Check className={classes.checkedIcon} />}
-            icon={<Check className={classes.uncheckedIcon} />}
-            classes={{
-              checked: classes.checked,
-            }}
-          />
+handleChange = event => {
+  this.setState({ selectedValue: event.target.value });
+};
+  
+  render(){
+  const { classes } = this.props;
+  const currentDate = new Date();
+    const year = currentDate.getFullYear();
+     return (
+    <GridContainer>
+  
+    
+    
+    <GridItem xs={12} sm={12} md={12}>
+        <Card className={classes.textCenter}>
+          <CardBody>
+          
+            <h2 className={classes.cardTitle}>System Analysis Final Exam</h2>
+            <p>2018/2019</p>
+            <p>
+             Department: Computer Sciense
+            </p>
+            <p>Duration: 2 Hours</p>
+            
+          </CardBody>
+         
+        </Card>
+        </GridItem>
 
-
-        </GridContainer>
-
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={12}>
-            <Card>
-              <CardHeader color="primary"  >
-                <h4 className={classes.cardTitleWhite}> Question 2 </h4>
-              </CardHeader>
-              <CardBody>
-                <Table
-                  tableHeaderColor="primary"
-                  tableHead={[<h2> what is your favourit subject ? </h2>]}
-                  tableData={[
-                    [
-                      <Radio
-                        checked={this.state.selectedValue === 'a'}
-                        onChange={this.handleChange}
-                        value="a"
-                        name="radio button demo"
-                        aria-label="A"
-                        icon={<FiberManualRecord className={classes.radioUnchecked} />}
-                        checkedIcon={<FiberManualRecord className={classes.radioChecked} />}
-                        classes={{
-                          checked: classes.radio,
-                        }}
-                      />
-                    ],
-                    [<Radio
-                      checked={this.state.selectedValue === 'b'}
-                      onChange={this.handleChange}
-                      value="b"
-                      name="radio button demo"
-                      aria-label="B"
-                      icon={<FiberManualRecord className={classes.radioUnchecked} />}
-                      checkedIcon={<FiberManualRecord className={classes.radioChecked} />}
-                      classes={{
+    <GridItem xs={12} sm={12} md={8}>
+      <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Question (7): An entity that doesn't have sufficient attributes to form a primary key is called</h4>
+                    </CardHeader>
+                    <CardBody>
+                        <Table
+                            tableHeaderColor="primary"
+                          
+                            tableData={[
+                                [ <Radio
+                    checked={this.state.selectedValue === 'a'}
+                    onChange={this.handleChange}
+                    value="a"
+                    name="radio button demo1"
+                    aria-label="A"
+                    icon={<FiberManualRecord className={classes.radioUnchecked}/>}
+                    checkedIcon={<FiberManualRecord className={classes.radioChecked}/>}
+                    classes={{
                         checked: classes.radio,
-                      }}
-                    />
-
-                    ],
-
-                    [<Radio
-                      checked={this.state.selectedValue === 'c'}
-                      onChange={this.handleChange}
-                      value="c"
-                      name="radio button demo"
-                      aria-label="C"
-                      icon={<FiberManualRecord className={classes.radioUnchecked} />}
-                      checkedIcon={<FiberManualRecord className={classes.radioChecked} />}
-                      classes={{
+                    }}
+                />, "Strong Entity", "", "", ""],
+                                [<Radio
+                    checked={this.state.selectedValue === 'b'}
+                    onChange={this.handleChange}
+                    value="b"
+                    name="radio button demo2"
+                    aria-label="B"
+                    icon={<FiberManualRecord className={classes.radioUnchecked}/>}
+                    checkedIcon={<FiberManualRecord className={classes.radioChecked}/>}
+                    classes={{
                         checked: classes.radio,
-                      }}
-                    />
-
-                    ],
-
-                    [<Radio
-                      checked={this.state.selectedValue === 'd'}
-                      onChange={this.handleChange}
-                      value="d"
-                      name="radio button demo"
-                      aria-label="D"
-                      icon={<FiberManualRecord className={classes.radioUnchecked} />}
-                      checkedIcon={<FiberManualRecord className={classes.radioChecked} />}
-                      classes={{
+                    }}
+                />, "Variant Entity", "", " ", ""],
+                                [<Radio
+                    checked={this.state.selectedValue === 'c'}
+                    onChange={this.handleChange}
+                    value="c"
+                    name="radio button demo3"
+                    aria-label="C"
+                    icon={<FiberManualRecord className={classes.radioUnchecked}/>}
+                    checkedIcon={<FiberManualRecord className={classes.radioChecked}/>}
+                    classes={{
                         checked: classes.radio,
-                      }}
-                    />
-                    ]
+                    }}
+                />, "Weak Entity", "", "", ""],
+                                [<Radio
+                    checked={this.state.selectedValue === 'd'}
+                    onChange={this.handleChange}
+                    value="d"
+                    name="radio button demo4"
+                    aria-label="D"
+                    icon={<FiberManualRecord className={classes.radioUnchecked}/>}
+                    checkedIcon={<FiberManualRecord className={classes.radioChecked}/>}
+                    classes={{
+                        checked: classes.radio,
+                    }}
+                />, "Variable Entity", "", "", ""]
+
+                            ]}
+                        />
+                    </CardBody>
+                </Card>
+      </GridItem>
+
+      <GridItem xs={4} sm={4} md={4}>
+      <Card>
+            <CardHeader color="warning">
+              <h4 className={classes.cardTitle}>Answered Questions</h4>
+              <p>Time Remaining: <Countdown date={`${year}-12-24T00:00:00`} /></p>
+            </CardHeader>
+            <CardBody>
+            <Table
+                            tableHeaderColor="primary"
+                            
+                            tableData={[
+                                [ <div>Q1
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q2
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>, <div>
+              Q3
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q4
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div> ],
+                                [<div>
+              Q5
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q6
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>, <div>
+              Q7
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q8
+              <Checkbox
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div> ]
+
+                            ]}
+                        />
+
+            
+            </CardBody>
+          </Card>
 
 
+          <div className={classes.textCenter}> 
+          <Button type="button" color="success" size="md"><NavigateBefore /></Button>
+          <Button type="button" color="success" size="md"><NavigateNext /></Button>
+          </div>
+         
+      </GridItem>
 
-                  ]}
-                />
-                <Button type="button" color="success"> submit</Button>
-                <Button type="button" color="success"> <Icon>ArrowLeft</Icon></Button>
-
-              </CardBody>
-            </Card>
-          </GridItem>
-
-        </GridContainer>
-      </div>
-    );
-  }
+    </GridContainer>
+  );
+              }
+             
 }
 
 StudentExam.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(checkboxAdnRadioStyle)(StudentExam);
