@@ -6,8 +6,9 @@ import Notifications from "@material-ui/icons/Notifications";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
+import InstructorDashboardPage from "views/InstructorDashboard/InstructorDashboard.jsx";
+import CoursesList from "views/CoursesList/CoursesList.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import CourseList from "views/CourseList/CourseList.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
@@ -15,14 +16,27 @@ import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
 import RTLPage from "views/RTLPage/RTLPage.jsx";
 
 const dashboardRoutes = [
-  {
-    path: "/dashboard",
-    name: "Dashboard",
-    rtlName: "لوحة القيادة",
-    icon: Dashboard,
-    component: DashboardPage,
-    layout: "/admin"
-  },
+
+//STUDENT'S DASHBOARD
+  //{
+  //  path: "/dashboard",
+  //  name: "Dashboard",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: DashboardPage,
+  //  layout: "/admin"
+  //  },
+
+//INSTRUCTOR'S DASHBOARD
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: InstructorDashboardPage,
+        layout: "/admin"
+    },
+//optional
   {
     path: "/user",
     name: "User Profile",
@@ -32,13 +46,13 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/Courses",
-    name: "Course List",
-    rtlName: "قائمة المواد",
+    path: "/CoursesList",
+    name: "Courses List",
+    rtlName: "قائمة الجدول",
     icon: "content_paste",
-    component: CourseList,
-    layout: "/admin"
-  },
+    component: CoursesList,
+
+},
   {
     path: "/QuestionBank",
     name: "Question Bank",
@@ -46,31 +60,31 @@ const dashboardRoutes = [
     icon: "list_alt",
     component: QuestionBank,
     layout: "/admin"
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    rtlName: "الرموز",
-    icon: BubbleChart,
-    component: Icons,
-    layout: "/admin"
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    rtlName: "إخطارات",
-    icon: Notifications,
-    component: NotificationsPage,
-    layout: "/admin"
-  },
-  {
-    path: "/rtl-page",
-    name: "RTL Support",
-    rtlName: "دعم لغات من اليمين لليسار",
-    icon: Language,
-    component: RTLPage,
-    layout: "/rtl"
   }
+  //{
+  //  path: "/icons",
+  //  name: "Icons",
+  //  rtlName: "الرموز",
+  //  icon: BubbleChart,
+  //  component: Icons,
+  //  layout: "/admin"
+  //},
+  //{
+  //  path: "/notifications",
+  //  name: "Notifications",
+  //  rtlName: "إخطارات",
+  //  icon: Notifications,
+  //  component: NotificationsPage,
+  //  layout: "/admin"
+  //},
+  //{
+  //  path: "/rtl-page",
+  //  name: "RTL Support",
+  //  rtlName: "دعم لغات من اليمين لليسار",
+  //  icon: Language,
+  //  component: RTLPage,
+  //  layout: "/rtl"
+  //}
 ];
 
 export default dashboardRoutes;
