@@ -8,6 +8,7 @@ import Language from "@material-ui/icons/Language";
 import StudentDashboardPage from "views/StudentDashboard/StudentDashboard.jsx";
 import InstructorDashboardPage from "views/InstructorDashboard/InstructorDashboard.jsx";
 import StudentCoursesList from "views/StudentCoursesList/StudentCoursesList.jsx";
+import StudentExam from "views/StudentExam/StudentExam.jsx";
 import InstructorCoursesList from "views/InstructorCoursesList/InstructorCoursesList.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Icons from "views/Icons/Icons.jsx";
@@ -56,6 +57,18 @@ const dashboardRoutes = [
     layout: "/admin"
 
 },
+
+//STUDENT'S EXAM
+{
+  path: "/Exam",
+  name: "Exam",
+  rtlName: "قائمة الجدول",
+  icon: "content_paste",
+  component: StudentExam,
+  layout: "/admin"
+
+},
+
 
  //INSTRUCTOR'S COURSESLIST
 //  {
