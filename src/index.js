@@ -5,6 +5,7 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 // core components
 import Admin from "layouts/Admin.jsx";
+// import Student from "layouts/Student.jsx";
 
 import "assets/css/material-dashboard-react.css?v=1.6.0";
 

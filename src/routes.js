@@ -4,70 +4,85 @@ import Person from "@material-ui/icons/Person";
 import BubbleChart from "@material-ui/icons/BubbleChart";
 import Notifications from "@material-ui/icons/Notifications";
 import Language from "@material-ui/icons/Language";
-// core components/views for Admin layout
-import DashboardPage from "views/Dashboard/Dashboard.jsx";
+// core components/views for instructor layout
+import StudentDashboardPage from "views/StudentDashboard/StudentDashboard.jsx";
 import InstructorDashboardPage from "views/InstructorDashboard/InstructorDashboard.jsx";
-import CoursesList from "views/CoursesList/CoursesList.jsx";
+import StudentCoursesList from "views/StudentCoursesList/StudentCoursesList.jsx";
+import InstructorCoursesList from "views/InstructorCoursesList/InstructorCoursesList.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
-// core components/views for RTL layout
-import RTLPage from "views/RTLPage/RTLPage.jsx";
+
 
 const dashboardRoutes = [
 
 //STUDENT'S DASHBOARD
-  //{
-  //  path: "/dashboard",
-  //  name: "Dashboard",
-  //  rtlName: "لوحة القيادة",
-  //  icon: Dashboard,
-  //  component: DashboardPage,
-  //  layout: "/admin"
-  //  },
+  {
+   path: "/dashboard",
+   name: "Dashboard",
+   rtlName: "لوحة القيادة",
+   icon: Dashboard,
+   component: StudentDashboardPage,
+   layout: "/admin"
+   },
 
 //INSTRUCTOR'S DASHBOARD
-    {
-        path: "/dashboard",
-        name: "Dashboard",
-        rtlName: "لوحة القيادة",
-        icon: Dashboard,
-        component: InstructorDashboardPage,
-        layout: "/admin"
-    },
+    // {
+    //     path: "/dashboard",
+    //     name: "Dashboard",
+    //     rtlName: "لوحة القيادة",
+    //     icon: Dashboard,
+    //     component: InstructorDashboardPage,
+    //     layout: "/instructor"
+    // },
 //optional
-  {
-    path: "/user",
-    name: "User Profile",
-    rtlName: "ملف تعريفي للمستخدم",
-    icon: Person,
-    component: UserProfile,
-    layout: "/admin"
-  },
+  // {
+  //   path: "/user",
+  //   name: "User Profile",
+  //   rtlName: "ملف تعريفي للمستخدم",
+  //   icon: Person,
+  //   component: UserProfile,
+  //   layout: "/instructor"
+  // },
+
+  //STUDENT'S COURSESLIST
   {
     path: "/CoursesList",
     name: "Courses List",
     rtlName: "قائمة الجدول",
     icon: "content_paste",
-    component: CoursesList,
+    component: StudentCoursesList,
+    layout: "/admin"
 
 },
-  {
-    path: "/QuestionBank",
-    name: "Question Bank",
-    rtlName: "بنك الأسئلة",
-    icon: "list_alt",
-    component: QuestionBank,
-    layout: "/admin"
-  }
+
+ //INSTRUCTOR'S COURSESLIST
+//  {
+//   path: "/CoursesList",
+//   name: "Courses List",
+//   rtlName: "قائمة الجدول",
+//   icon: "content_paste",
+//   component: InstructorCoursesList,
+
+// },
+
+//INSTRUCTOR'S QB
+  // {
+  //   path: "/QuestionBank",
+  //   name: "Question Bank",
+  //   rtlName: "بنك الأسئلة",
+  //   icon: "content_paste",
+  //   component: QuestionBank,
+  //   layout: "/instructor"
+  // }
   //{
   //  path: "/icons",
   //  name: "Icons",
   //  rtlName: "الرموز",
   //  icon: BubbleChart,
   //  component: Icons,
-  //  layout: "/admin"
+  //  layout: "/instructor"
   //},
   //{
   //  path: "/notifications",
@@ -75,7 +90,7 @@ const dashboardRoutes = [
   //  rtlName: "إخطارات",
   //  icon: Notifications,
   //  component: NotificationsPage,
-  //  layout: "/admin"
+  //  layout: "/instructor"
   //},
   //{
   //  path: "/rtl-page",

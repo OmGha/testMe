@@ -42,7 +42,7 @@ import {
 
 import dashboardStyle from "assets/jss/material-dashboard-react/views/dashboardStyle.jsx";
 
-class Dashboard extends React.Component {
+class InstructorDashboard extends React.Component {
     state = {
         value: 0
     };
@@ -114,7 +114,7 @@ class Dashboard extends React.Component {
                                     tableHead={["ID", "Name", "Salary", "Country"]}
                                     tableData={[
                                         ["1", "Dakota Rice", "$36,738", "Niger"],
-                                        ["2", "Minerva Hooper", "$23,789", "Curaçao"],
+                                        ["2", "Minerva Hooper", "$23,789", "Curaï¿½ao"],
                                         ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
                                         ["4", "Philip Chaney", "$38,735", "Korea, South"]
                                     ]}
@@ -128,8 +128,8 @@ class Dashboard extends React.Component {
     }
 }
 
-Dashboard.propTypes = {
+InstructorDashboard.propTypes = {
     classes: PropTypes.object.isRequired
 };
 
-export default withStyles(dashboardStyle)(Dashboard);
+export default withStyles(dashboardStyle)(InstructorDashboard);
