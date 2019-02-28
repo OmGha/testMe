@@ -74,7 +74,7 @@ class StudentDashboard extends React.Component {
                                 ["Database Final Exam", "Database", "5 Jan 2019", "55/60", <Button type="button" color="success" size="sm">View</Button>],
                                 ["Logic Programming Final Exam", "Logic Programming", "1 Jan 2019", "53/60", <Button type="button" color="success" size="sm">View</Button>],
                                 ["Software Engineering Midterm Exam", "Software Engineering", "27 Nov 2018", "23/25", <Button type="button" color="success" size="sm">View</Button>],
-                                ["Microprocessing Midterm Exam", "Microprocessing", "25 Nov 2018", "20/25", <Button type="button" color="success" size="sm">View</Button>],
+                                ["System Analysis Midterm Exam", "System Analysis", "25 Nov 2018", "20/25", <Button type="button" color="success" size="sm">View</Button>],
                                 ["Operating Systems Midterm Exam", "Operating Systems", "24 Nov 2018", "23/25", <Button type="button" color="success" size="sm">View</Button>],
                                 ["Logic Programming Quiz", "Logic Programming", "30 Oct 2018", "9/10", <Button type="button" color="success" size="sm">View</Button>]
 
@@ -98,7 +98,7 @@ class StudentDashboard extends React.Component {
 
                                     ["Operating Systems Final Exam", "Operating Systems", "9 Jan 2019 / 09:00 am", "2 Hours", <Button type="button" color="success" size="sm">Start</Button>],
                                     ["Software Engineering Final Exam", "Software Engineering", "12 Jan 2019 / 01:00 pm", "2 Hours", <Button type="button" color="danger" size="sm">Pending</Button>],
-                                    ["Microprocessing Final Exam", "Microprocessing", "15 Nov 2019 / 09:00 am", "3 Hours", <Button type="button" color="danger" size="sm">Pending</Button>]
+                                    ["System Analysis Final Exam", "System Analysis", "15 Nov 2019 / 09:00 am", "3 Hours", <Button type="button" color="danger" size="sm">Pending</Button>]
 
                                 ]}
                             />

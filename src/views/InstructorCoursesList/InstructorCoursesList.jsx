@@ -39,7 +39,7 @@ const styles = {
   }
 };
 
-function CourseList(props) {
+function InstructorCoursesList(props) {
   const { classes } = props;
   return (
     <GridContainer>
@@ -54,13 +54,12 @@ function CourseList(props) {
           <CardBody>
             <Table
               tableHeaderColor="info"
-              tableHead={["ID", "Title", "Department", "Bransh", "Hours"]}
+              tableHead={["ID", "Title", "Department", "Level", "Branch", "Hours/Week"]}
               tableData={[
-                ["1", "System Analysis", "Computer Science", "English", "3"],
-                ["2", "System Design", "Computer Science", "English", "3"],
-                ["3", "DataBase 1", "Computer Science", "English", "3"],
-                ["4", "DataBase 1", "Information Systems", "Arabic", "3"],
-                ["5", "Expert Systems", "Computer Science", "English", "3"]
+                ["1", "System Analysis", "Computer Science", "1", "English", "3"],
+                ["2", "System Design", "Computer Science", "3", "English", "3"],
+                ["3", "تصميم النظم", "Information System", "3", "Arabic", "3"],
+                ["4", "Expert Systems", "Computer Science", "4", "English", "3"]
               ]}
             />
           </CardBody>
@@ -70,4 +69,4 @@ function CourseList(props) {
   );
 }
 
-export default withStyles(styles)(CourseList);
+export default withStyles(styles)(InstructorCoursesList);
