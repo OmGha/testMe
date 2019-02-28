@@ -43,7 +43,7 @@ const dashboardRoutes = [
     path: "/QuestionBank",
     name: "Question Bank",
     rtlName: "بنك الأسئلة",
-    icon: "content_paste",
+    icon: "list_alt",
     component: QuestionBank,
     layout: "/admin"
   },

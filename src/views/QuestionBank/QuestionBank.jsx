@@ -53,13 +53,8 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-            <GridItem xs={4} sm={4} md={8}>
-              Number of Questions
-            </GridItem>
-            <GridItem xs={2} sm={2} md={4}>
-              300
-            </GridItem>
-            <Button color="warning">View and Edit</Button>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.
+          <Button color="warning">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
@@ -72,12 +67,7 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-            <GridItem xs={4} sm={4} md={8}>
-              Number of Questions
-            </GridItem>
-            <GridItem xs={2} sm={2} md={4}>
-              300
-            </GridItem>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.
             <Button color="primary">View and Edit</Button>
           </CardBody>
         </Card>
@@ -91,13 +81,7 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-            <GridItem xs={4} sm={4} md={8}>
-              Number of Questions
-            </GridItem>
-            <GridItem xs={2} sm={2} md={4}>
-              300
-            </GridItem>
-            <Button color="danger">View and Edit</Button>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="danger">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
@@ -110,13 +94,7 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-            <GridItem xs={4} sm={4} md={8}>
-              Number of Questions
-            </GridItem>
-            <GridItem xs={2} sm={2} md={4}>
-              300
-            </GridItem>
-            <Button color="info">View and Edit</Button>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="info">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
@@ -129,13 +107,7 @@ function QuestionBank (props) {
             </p>
           </CardHeader>
           <CardBody>
-            <GridItem xs={4} sm={4} md={8}>
-              Number of Questions
-            </GridItem>
-            <GridItem xs={2} sm={2} md={4}>
-              300
-            </GridItem>
-            <Button color="success">View and Edit</Button>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies, enim eu malesuada blandit, erat risus blandit urna, sit amet volutpat ante neque eu ante.            <Button color="success">View and Edit</Button>
           </CardBody>
         </Card>
       </GridItem>
