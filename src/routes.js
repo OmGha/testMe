@@ -1,20 +1,17 @@
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Person from "@material-ui/icons/Person";
-import LibraryBooks from "@material-ui/icons/LibraryBooks";
 import BubbleChart from "@material-ui/icons/BubbleChart";
-import LocationOn from "@material-ui/icons/LocationOn";
 import Notifications from "@material-ui/icons/Notifications";
-import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import InstructorDashboardPage from "views/InstructorDashboard/InstructorDashboard.jsx";
 import CoursesList from "views/CoursesList/CoursesList.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
+import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.jsx";
 
@@ -54,6 +51,14 @@ const dashboardRoutes = [
     rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: CoursesList,
+
+},
+  {
+    path: "/QuestionBank",
+    name: "Question Bank",
+    rtlName: "بنك الأسئلة",
+    icon: "content_paste",
+    component: QuestionBank,
     layout: "/admin"
   }
   //{
