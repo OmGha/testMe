@@ -56,9 +56,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        A ... entity has a primary key that is partially or totally derived from the parent entity in the relationship
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -70,9 +68,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        Weak entities are used in entity relationship diagrams and are denoted by...
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -84,9 +80,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        Derived attributes in entity relationship diagrams are denoted by...
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -98,9 +92,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        Relationship between weak entity set and identifying entity set's association is known as...
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -112,9 +104,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        A rectangle represents which of the following in an ERD...
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -126,9 +116,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        In an ERD, the focus is on the ... and the relationships between them
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -140,9 +128,7 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        Which of the following might be represented with a multivalued attribute...
                         </GridItem>
                         <GridItem>
                         <Checkbox
@@ -154,12 +140,11 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         />
-                        The place is close to Barceloneta Beach and bus stop just 2 min by
-                        walk and near to "Naviglio" where you can enjoy the main night
-                        life in Barcelona...
+                        An entity set that may not have sufficient attributes to form a primary key is called...
                         </GridItem>
-                        <GridItem>
-                            <Button type="button" color="info">Submit Exam</Button>
+                        
+                        <GridItem xs={12} sm={12} md={12}>
+                            <Button type="button" color="success">Submit Exam</Button>
                         </GridItem>
                     </CardBody>
                 </Card>

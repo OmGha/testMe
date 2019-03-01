@@ -20,54 +20,27 @@ import CreateExam from "./views/CreateExam/CreateExam";
 
 const dashboardRoutes = [
 
+  //LOGIN PAGE
+  // {
+  //  path: "/login",
+  //  name: "Login",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: LoginPage,
+  //  layout: "/admin"
+  //  },
+
 //STUDENT'S DASHBOARD
 // {
-  // path: "/login",
-  // name: "Login",
-  // rtlName: "تسجيل الدخول",
-  // icon: Dashboard,
-  // component: LoginPage,
-  // layout: "/admin"
-  // },
+  //  path: "/dashboard",
+  //  name: "Dashboard",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: StudentDashboardPage,
+  //  layout: "/admin"
+  //  },
 
-  {
-    path: "/createexam",
-    name: "Create Exam",
-    rtlName: "وضع اختبار",
-    icon: Dashboard,
-    component: CreateExam,
-    layout: "/admin"
-    },
-
-  {
-   path: "/dashboard",
-   name: "Dashboard",
-   rtlName: "لوحة القيادة",
-   icon: Dashboard,
-   component: StudentDashboardPage,
-   layout: "/admin"
-   },
-
-//INSTRUCTOR'S DASHBOARD
-    {
-        path: "/dashboard",
-        name: "Dashboard",
-        rtlName: "لوحة القيادة",
-        icon: Dashboard,
-        component: InstructorDashboardPage,
-        layout: "/admin"
-    },
-//optional
-  // {
-  //   path: "/user",
-  //   name: "User Profile",
-  //   rtlName: "ملف تعريفي للمستخدم",
-  //   icon: Person,
-  //   component: UserProfile,
-  //   layout: "/instructor"
-  // },
-
-  //STUDENT'S COURSESLIST
+//STUDENT'S COURSESLIST
   // {
   //   path: "/CoursesList",
   //   name: "Courses List",
@@ -79,20 +52,28 @@ const dashboardRoutes = [
 // },
 
 //STUDENT'S EXAM
-{
-  path: "/Exam",
-  name: "Exam",
-  rtlName: "قائمة الجدول",
-  icon: "content_paste",
-  component: StudentExam,
-  layout: "/admin"
+// {
+//   path: "/Exam",
+//   name: "Exam",
+//   rtlName: "قائمة الجدول",
+//   icon: "content_paste",
+//   component: StudentExam,
+//   layout: "/admin"
 
-},
-
-
+// },
  
 
-//INSTRUCTOR'S QB
+//INSTRUCTOR'S DASHBOARD
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: InstructorDashboardPage,
+        layout: "/admin"
+    },
+
+    //INSTRUCTOR'S QB
   {
     path: "/QuestionBank",
     name: "Question Bank",
@@ -100,7 +81,35 @@ const dashboardRoutes = [
     icon: "content_paste",
     component: QuestionBank,
     layout: "/admin"
-  }
+  },
+
+    //INSTRUCTOR CREATE A NEW EXAM
+  // {
+  //   path: "/createexam",
+  //   name: "Create Exam",
+  //   rtlName: "وضع اختبار",
+  //   icon: Dashboard,
+  //   component: CreateExam,
+  //   layout: "/admin"
+  //   },
+
+  
+//optional
+  // {
+  //   path: "/user",
+  //   name: "User Profile",
+  //   rtlName: "ملف تعريفي للمستخدم",
+  //   icon: Person,
+  //   component: UserProfile,
+  //   layout: "/instructor"
+  // },
+
+  
+
+
+ 
+
+
   //{
   //  path: "/icons",
   //  name: "Icons",
