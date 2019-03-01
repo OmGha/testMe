@@ -16,6 +16,7 @@ import NotificationsPage from "views/Notifications/Notifications.jsx";
 import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx"
 import CreateExam from "./views/CreateExam/CreateExam";
+import AddQuestionPage from "./views/AddQuestionPage/AddQuestionPage";
 
 
 const dashboardRoutes = [
@@ -31,6 +32,15 @@ const dashboardRoutes = [
   // },
 
   {
+    path: "/addquestion",
+    name: "Add Question",
+    rtlName: "إضافة سؤال",
+    icon: Dashboard,
+    component: AddQuestionPage,
+    layout: "/admin"
+    },
+
+  {
     path: "/createexam",
     name: "Create Exam",
     rtlName: "وضع اختبار",
@@ -39,14 +49,14 @@ const dashboardRoutes = [
     layout: "/admin"
     },
 
-  {
-   path: "/dashboard",
-   name: "Dashboard",
-   rtlName: "لوحة القيادة",
-   icon: Dashboard,
-   component: StudentDashboardPage,
-   layout: "/admin"
-   },
+  // {
+  //  path: "/dashboard",
+  //  name: "Dashboard",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: StudentDashboardPage,
+  //  layout: "/admin"
+  //  },
 
 //INSTRUCTOR'S DASHBOARD
     {
