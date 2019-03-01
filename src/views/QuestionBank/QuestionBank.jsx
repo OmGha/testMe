@@ -56,6 +56,7 @@ function QuestionBank (props) {
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
           <Button color="warning">View and Edit</Button>
+          <Button color="warning">Create Exam</Button>
           </CardBody>
         </Card>
       </GridItem>
@@ -71,13 +72,14 @@ function QuestionBank (props) {
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
             <Button color="primary">View and Edit</Button>
+            <Button color="primary">Create Exam</Button>
           </CardBody>
         </Card>
       </GridItem>
       <GridItem xs={12} sm={6} md={4}>
         <Card>
           <CardHeader color="danger">
-            <h4 className={classes.cardTitleWhite}>تصميم النظم</h4>
+            <h4 className={classes.cardTitleWhite}>تصميم وتحليل النظم</h4>
             <p className={classes.cardCategoryWhite}>
               Information System, Third Year
             </p>
@@ -86,6 +88,7 @@ function QuestionBank (props) {
             <div>Description Description Description Description Description Description Description Description Description Description            
 </div>
           <Button color="danger">View and Edit</Button>
+          <Button color="danger">Create Exam</Button>
           </CardBody>
         </Card>
       </GridItem>
@@ -101,6 +104,7 @@ function QuestionBank (props) {
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
           <Button color="info">View and Edit</Button>
+          <Button color="info">Create Exam</Button>
           </CardBody>
         </Card>
       </GridItem>

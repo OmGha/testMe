@@ -14,11 +14,31 @@ import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
+import LoginPage from "views/LoginPage/LoginPage.jsx"
+import CreateExam from "./views/CreateExam/CreateExam";
 
 
 const dashboardRoutes = [
 
 //STUDENT'S DASHBOARD
+// {
+  // path: "/login",
+  // name: "Login",
+  // rtlName: "تسجيل الدخول",
+  // icon: Dashboard,
+  // component: LoginPage,
+  // layout: "/admin"
+  // },
+
+  {
+    path: "/createexam",
+    name: "Create Exam",
+    rtlName: "وضع اهتبار",
+    icon: Dashboard,
+    component: CreateExam,
+    layout: "/admin"
+    },
+
   {
    path: "/dashboard",
    name: "Dashboard",
@@ -48,15 +68,15 @@ const dashboardRoutes = [
   // },
 
   //STUDENT'S COURSESLIST
-  {
-    path: "/CoursesList",
-    name: "Courses List",
-    rtlName: "قائمة الجدول",
-    icon: "content_paste",
-    component: StudentCoursesList,
-    layout: "/admin"
+  // {
+  //   path: "/CoursesList",
+  //   name: "Courses List",
+  //   rtlName: "قائمة الجدول",
+  //   icon: "content_paste",
+  //   component: StudentCoursesList,
+  //   layout: "/admin"
 
-},
+// },
 
 //STUDENT'S EXAM
 {
@@ -73,22 +93,22 @@ const dashboardRoutes = [
  
 
 //INSTRUCTOR'S QB
+  {
+    path: "/QuestionBank",
+    name: "Question Bank",
+    rtlName: "بنك الأسئلة",
+    icon: "content_paste",
+    component: QuestionBank,
+    layout: "/admin"
+  }
   // {
-  //   path: "/QuestionBank",
-  //   name: "Question Bank",
-  //   rtlName: "بنك الأسئلة",
-  //   icon: "content_paste",
-  //   component: QuestionBank,
-  //   layout: "/admin"
-  // }
-  //{
   //  path: "/icons",
   //  name: "Icons",
   //  rtlName: "الرموز",
   //  icon: BubbleChart,
   //  component: Icons,
-  //  layout: "/instructor"
-  //},
+  //  layout: "/admin"
+  // },
   //{
   //  path: "/notifications",
   //  name: "Notifications",
