@@ -33,7 +33,7 @@ const dashboardRoutes = [
   {
     path: "/createexam",
     name: "Create Exam",
-    rtlName: "وضع اهتبار",
+    rtlName: "وضع اختبار",
     icon: Dashboard,
     component: CreateExam,
     layout: "/admin"
@@ -49,14 +49,14 @@ const dashboardRoutes = [
    },
 
 //INSTRUCTOR'S DASHBOARD
-    // {
-    //     path: "/dashboard",
-    //     name: "Dashboard",
-    //     rtlName: "لوحة القيادة",
-    //     icon: Dashboard,
-    //     component: InstructorDashboardPage,
-    //     layout: "/admin"
-    // },
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: InstructorDashboardPage,
+        layout: "/admin"
+    },
 //optional
   // {
   //   path: "/user",
@@ -101,7 +101,7 @@ const dashboardRoutes = [
     component: QuestionBank,
     layout: "/admin"
   }
-  // {
+  //{
   //  path: "/icons",
   //  name: "Icons",
   //  rtlName: "الرموز",
