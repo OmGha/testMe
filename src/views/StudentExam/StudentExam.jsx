@@ -23,7 +23,9 @@ import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 import checkboxAdnRadioStyle from "assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx";
 import NavigateBefore from "@material-ui/icons/NavigateBefore";
 import NavigateNext from "@material-ui/icons/NavigateNext";
-
+import Translate from "@material-ui/icons/Translate";
+import Tooltip from "@material-ui/core/Tooltip";
+import tasksStyle from 'assets/jss/material-dashboard-react/components/tasksStyle.jsx';
 
 import {
   cardTitle,
@@ -38,6 +40,12 @@ const styles = {
   cardLink,
   textCenter: {
     textAlign: "center"
+  },
+  textLeft: {
+    textAlign: "left"
+  },
+  checkboxpadding: {
+    padding: "8px"
   }
 };
 
@@ -158,6 +166,28 @@ handleChange = event => {
                         />
                     </CardBody>
                 </Card>
+
+                <GridItem xs={8} sm={8} md={8} className={classes.textCenter}>
+                  
+          
+                <Tooltip
+                    id="tooltip-top"
+                    title="Translate Question In Arabic"
+                    placement="top"
+                    classes={{tooltip:classes.tooltip}}>
+                    <IconButton aria-label="Translate" className={classes.tableActionButton}>
+                        <Translate className={classes.tableActionButtonIcon + " " + classes.translate}/>
+                    </IconButton>
+                </Tooltip>
+
+          <Button type="button" color="success" size="md"><NavigateBefore /></Button>
+          <Button type="button" color="success" size="md"><NavigateNext /></Button>
+      
+
+                </GridItem>
+
+               
+
       </GridItem>
 
       <GridItem xs={4} sm={4} md={4}>
@@ -171,8 +201,9 @@ handleChange = event => {
                             tableHeaderColor="primary"
                             
                             tableData={[
-                                [ <div>Q1
-              <Checkbox
+                                [ <div>
+                              Q1
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -184,7 +215,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q2
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -196,7 +227,7 @@ handleChange = event => {
             />
             </div>, <div>
               Q3
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -208,7 +239,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q4
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -221,7 +252,7 @@ handleChange = event => {
             </div> ],
                                 [<div>
               Q5
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -233,7 +264,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q6
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -245,7 +276,7 @@ handleChange = event => {
             />
             </div>, <div>
               Q7
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -257,7 +288,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q8
-              <Checkbox
+              <Checkbox style={{ padding: "8px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -267,7 +298,60 @@ handleChange = event => {
                     checked: classes.unchecked,
                 }}
             />
-            </div> ]
+            </div> ],
+
+            
+            [<div>
+              Q9
+              <Checkbox style={{ padding: "8px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q10
+              <Checkbox style={{ padding: "8px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>, <div>
+              Q11
+              <Checkbox style={{ padding: "8px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q12
+              <Checkbox style={{ padding: "8px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div> ],
+
+            
 
                             ]}
                         />
@@ -276,11 +360,12 @@ handleChange = event => {
             </CardBody>
           </Card>
 
-
-          <div className={classes.textCenter}> 
-          <Button type="button" color="success" size="md"><NavigateBefore /></Button>
-          <Button type="button" color="success" size="md"><NavigateNext /></Button>
-          </div>
+         
+<div className={classes.textCenter}>
+  <Button justIcon round color="warning"><NavigateBefore /></Button>
+<Button justIcon round color="warning"><NavigateNext /></Button>
+</div>
+         
          
       </GridItem>
 
@@ -294,4 +379,4 @@ StudentExam.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(checkboxAdnRadioStyle)(StudentExam);
+export default withStyles(checkboxAdnRadioStyle, tasksStyle)(StudentExam);

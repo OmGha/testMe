@@ -43,7 +43,7 @@ class CreateExam extends React.Component {
                 <Card>
                     <CardHeader color="info">
                     <h4 className={classes.cardTitle}>Creating New Exam</h4>
-                    <p>In: System Design</p>
+                    <p>In: System Analysis</p>
                     </CardHeader>
                     <CardBody>
                         <GridItem>
