@@ -15,6 +15,9 @@ import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import Table from "components/Table/Table.jsx";
+import CustomInput from "components/CustomInput/CustomInput.jsx";
+
 
 
 class CreateExam extends React.Component {
@@ -46,8 +49,11 @@ class CreateExam extends React.Component {
                     <p>In: System Analysis</p>
                     </CardHeader>
                     <CardBody>
-                        <GridItem>
-                        <Checkbox
+                    <Table
+                        tableHeaderColor="info"
+                        tableHead={['','Question','Duration','Mark']}
+                        tableData={[
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -55,11 +61,11 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        A ... entity has a primary key that is partially or totally derived from the parent entity in the relationship
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
+                        /> , <p>A ... entity has a primary key that is partially or totally derived from the parent entity in the relationship</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -67,11 +73,11 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        Weak entities are used in entity relationship diagrams and are denoted by...
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
+                        /> , <p>Weak entities are used in entity relationship diagrams and are denoted by...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -79,11 +85,12 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        Derived attributes in entity relationship diagrams are denoted by...
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
+                        /> ,
+                        <p>Derived attributes in entity relationship diagrams are denoted by...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -91,11 +98,12 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        Relationship between weak entity set and identifying entity set's association is known as...
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
+                        /> ,
+                        <p>Relationship between weak entity set and identifying entity set's association is known as...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -103,11 +111,12 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        A rectangle represents which of the following in an ERD...
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
+                        /> ,
+                        <p>A rectangle represents which of the following in an ERD...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                            [ <Checkbox
                         tabIndex={-1}
                         onClick={this.handleToggle(1)}
                         checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -115,34 +124,41 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        />
-                        In an ERD, the focus is on the ... and the relationships between them
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
-                        tabIndex={-1}
-                        onClick={this.handleToggle(1)}
-                        checkedIcon={<Check className={classes.checkedIcon}/>}
-                        icon={<Check className={classes.uncheckedIcon}/>}
-                        classes={{
-                            checked: classes.checked,
-                        }}
-                        />
-                        Which of the following might be represented with a multivalued attribute...
-                        </GridItem>
-                        <GridItem>
-                        <Checkbox
-                        tabIndex={-1}
-                        onClick={this.handleToggle(1)}
-                        checkedIcon={<Check className={classes.checkedIcon}/>}
-                        icon={<Check className={classes.uncheckedIcon}/>}
-                        classes={{
-                            checked: classes.checked,
-                        }}
-                        />
-                        An entity set that may not have sufficient attributes to form a primary key is called...
-                        </GridItem>
+                        /> ,
+                        <p>In an ERD, the focus is on the ... and the relationships between them</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ]
+                        ,
                         
+                        [ <Checkbox
+                        tabIndex={-1}
+                        onClick={this.handleToggle(1)}
+                        checkedIcon={<Check className={classes.checkedIcon}/>}
+                        icon={<Check className={classes.uncheckedIcon}/>}
+                        classes={{
+                            checked: classes.checked,
+                        }}
+                        /> ,
+                        <p>Which of the following might be represented with a multivalued attribute...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+
+                        [ <Checkbox
+                        tabIndex={-1}
+                        onClick={this.handleToggle(1)}
+                        checkedIcon={<Check className={classes.checkedIcon}/>}
+                        icon={<Check className={classes.uncheckedIcon}/>}
+                        classes={{
+                            checked: classes.checked,
+                        }}
+                        /> ,
+                        <p>An entity set that may not have sufficient attributes to form a primary key is called...</p> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
+                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ]
+                        ]
+                        }
+                    />
+                       
                         <GridItem xs={12} sm={12} md={12}>
                             <Button type="button" color="success">Submit Exam</Button>
                         </GridItem>

@@ -21,7 +21,7 @@ import AddQuestionPage from "./views/AddQuestionPage/AddQuestionPage.jsx";
 
 const dashboardRoutes = [
 
-  //LOGIN PAGE
+  // LOGIN PAGE
   // {
   //  path: "/login",
   //  name: "Login",
