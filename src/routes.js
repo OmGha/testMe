@@ -9,6 +9,7 @@ import StudentDashboardPage from "views/StudentDashboard/StudentDashboard.jsx";
 import InstructorDashboardPage from "views/InstructorDashboard/InstructorDashboard.jsx";
 import StudentCoursesList from "views/StudentCoursesList/StudentCoursesList.jsx";
 import StudentExam from "views/StudentExam/StudentExam.jsx";
+import Reports from "views/Reports/Reports.jsx";
 import InstructorCoursesList from "views/InstructorCoursesList/InstructorCoursesList.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import Icons from "views/Icons/Icons.jsx";
@@ -53,12 +54,24 @@ const dashboardRoutes = [
 },
 
 //STUDENT'S EXAM
+// {
+//   path: "/Exam",
+//   name: "Exam",
+//   rtlName: "قائمة الجدول",
+//   icon: "content_paste",
+//   component: StudentExam,
+//   layout: "/admin"
+
+// },
+
+
+//STUDENT'S REPORTS
 {
-  path: "/Exam",
-  name: "Exam",
+  path: "/Report",
+  name: "Report",
   rtlName: "قائمة الجدول",
   icon: "content_paste",
-  component: StudentExam,
+  component: Reports,
   layout: "/admin"
 
 },
