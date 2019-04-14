@@ -58,6 +58,7 @@ class InstructorDashboard extends React.Component {
         return (
             <div>
                
+               
                 <GridContainer>
                 <GridItem xs={12} sm={12} md={12}>
         <Card>
@@ -71,7 +72,7 @@ class InstructorDashboard extends React.Component {
               tableData={[
                 ["1", "System Analysis", "Computer Science", "1", "English", "3"],
                 ["2", "System Design", "Computer Science", "3", "English", "3"],
-                ["3", "تصميم وتحليل النظم", "Information System", "3", "Arabic", "3"],
+                ["3", "تصميم النظم", "Information System", "3", "Arabic", "3"],
                 ["4", "Expert Systems", "Computer Science", "4", "English", "3"]
               ]}
             />

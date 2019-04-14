@@ -251,7 +251,7 @@ footer ul li a:hover {
   border-radius: 8px 0 0 8px;
   text-align: center;
   top: 120px;
-  .badge-primary-background-color: #9c27b0;
+  badge-primary-background-color: #9c27b0;
 }
 
 .fixed-plugin .SocialMediaShareButton,
@@ -505,4 +505,36 @@ footer ul li a:hover {
 .fixed-plugin.rtl-fixed-plugin .dropdown-menu {
   right: auto;
   left: 80px;
+}
+.modal {
+  font-size: 13px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+  text-align: center;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
 }

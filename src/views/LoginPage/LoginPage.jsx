@@ -11,7 +11,7 @@ import { cardTitle, cardSubtitle, cardLink } from "assets/jss/material-dashboard
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
-import {Tabs, Tab} from 'react-materialize'
+// import {Tabs, Tab} from 'react-materialize'
 
 const styles = {
     cardTitle,

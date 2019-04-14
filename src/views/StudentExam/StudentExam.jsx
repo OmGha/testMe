@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import Popup from "reactjs-popup";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
@@ -27,6 +28,7 @@ import Translate from "@material-ui/icons/Translate";
 import Tooltip from "@material-ui/core/Tooltip";
 import tasksStyle from 'assets/jss/material-dashboard-react/components/tasksStyle.jsx';
 
+
 import {
   cardTitle,
   cardSubtitle,
@@ -43,6 +45,10 @@ const styles = {
   },
   textLeft: {
     textAlign: "left"
+  },
+  Submitbtn: {
+    width: "135px",
+    height: "55px"
   },
   checkboxpadding: {
     padding: "8px"
@@ -180,8 +186,8 @@ handleChange = event => {
                     </IconButton>
                 </Tooltip>
 
-          <Button type="button" color="success" size="md"><NavigateBefore /></Button>
-          <Button type="button" color="success" size="md"><NavigateNext /></Button>
+          <Button type="button" color="primary" size="md" style={{ margin: "0px 20px 0px 230px" }}><NavigateBefore /></Button>
+          <Button type="button" color="primary" size="md"><NavigateNext /></Button>
       
 
                 </GridItem>
@@ -196,7 +202,7 @@ handleChange = event => {
               <h4 className={classes.cardTitle}>Answered Questions</h4>
               <p>Time Remaining: <Countdown date={`${year}-12-24T00:00:00`} /></p>
             </CardHeader>
-            <CardBody>
+            <CardBody style={{ overflowY: "scroll", height: "239px" }}>
             <Table
                             tableHeaderColor="primary"
                             
@@ -315,7 +321,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q10
-              <Checkbox style={{ padding: "8px" }}
+              <Checkbox style={{ padding: "7px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -327,7 +333,7 @@ handleChange = event => {
             />
             </div>, <div>
               Q11
-              <Checkbox style={{ padding: "8px" }}
+              <Checkbox style={{ padding: "7px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -339,7 +345,7 @@ handleChange = event => {
             />
             </div>,  <div>
               Q12
-              <Checkbox style={{ padding: "8px" }}
+              <Checkbox style={{ padding: "7px" }}
                 tabIndex={-1}
                 onClick={this.handleToggle(1)}
                 checkedIcon={<Check className={classes.checkedIcon}/>}
@@ -351,6 +357,109 @@ handleChange = event => {
             />
             </div> ],
 
+
+            [<div>
+                              Q13
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q14
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>, <div>
+              Q15
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q16
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div> ],
+
+
+            [<div>
+                              Q17
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q18
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>, <div>
+              Q19
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div>,  <div>
+              Q20
+              <Checkbox style={{ padding: "7px" }}
+                tabIndex={-1}
+                onClick={this.handleToggle(1)}
+                checkedIcon={<Check className={classes.checkedIcon}/>}
+                icon={<Check className={classes.uncheckedIcon}/>}
+                color={'primary'}
+                classes={{
+                    checked: classes.unchecked,
+                }}
+            />
+            </div> ]
+
+
             
 
                             ]}
@@ -360,11 +469,28 @@ handleChange = event => {
             </CardBody>
           </Card>
 
-         
-<div className={classes.textCenter}>
-  <Button justIcon round color="warning"><NavigateBefore /></Button>
-<Button justIcon round color="warning"><NavigateNext /></Button>
-</div>
+
+<Popup trigger={<div className={classes.textCenter}>
+  <Button round color="success" size="lg">Submit</Button>
+</div>} modal>
+    {close => (
+      <div className="modal">
+        <div className="header"> <h3>Confirmation Message</h3> </div>
+        <div className="content">
+          {' '}
+         <h4>Are You Sure You Want To Submit The Exam?</h4>
+        </div>
+        <div className="actions">
+        <Button type="button" round color="success" size="md" onClick={() => {close()}}>
+            Yes
+          </Button>
+          <Button type="button" round color="danger" size="md" onClick={() => {close()}}>
+            No
+          </Button>
+        </div>
+      </div>
+    )}
+  </Popup>
          
          
       </GridItem>
