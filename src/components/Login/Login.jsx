@@ -24,7 +24,7 @@ class Login extends React.Component {
       return (
         <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-                <CustomInput labelText="User Name" id="material" formControlProps={{
+                <CustomInput name="userName" labelText="User Name" id="material" formControlProps={{
                         fullWidth: true
                     }}
                     inputProps={{
