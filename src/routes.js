@@ -30,90 +30,90 @@ const dashboardRoutes = [
    layout: "/admin"
    },
 
-//STUDENT'S DASHBOARD
-// {
-//    path: "/dashboard",
-//    name: "Dashboard",
-//    rtlName: "لوحة القيادة",
-//    icon: Dashboard,
-//    component: StudentDashboardPage,
-//    layout: "/admin"
-//    },
+// STUDENT'S DASHBOARD
+{
+   path: "/dashboard",
+   name: "Dashboard",
+   rtlName: "لوحة القيادة",
+   icon: Dashboard,
+   component: StudentDashboardPage,
+   layout: "/admin"
+   },
 
-//STUDENT'S COURSESLIST
-//   {
-//     path: "/CoursesList",
-//     name: "Courses List",
-//     rtlName: "قائمة الجدول",
-//     icon: "content_paste",
-//     component: StudentCoursesList,
-//     layout: "/admin"
+// STUDENT'S COURSESLIST
+  {
+    path: "/CoursesList",
+    name: "Courses List",
+    rtlName: "قائمة الجدول",
+    icon: "content_paste",
+    component: StudentCoursesList,
+    layout: "/admin"
 
-// },
+},
 
-//STUDENT'S EXAM
-// {
-//   path: "/Exam",
-//   name: "Exam",
-//   rtlName: "قائمة الجدول",
-//   icon: "content_paste",
-//   component: StudentExam,
-//   layout: "/admin"
+// STUDENT'S EXAM
+{
+  path: "/Exam",
+  name: "Exam",
+  rtlName: "قائمة الجدول",
+  icon: "content_paste",
+  component: StudentExam,
+  layout: "/admin"
 
-// },
+},
 
 
-//STUDENT'S REPORTS
-// {
-//   path: "/Report",
-//   name: "Report",
-//   rtlName: "قائمة الجدول",
-//   icon: "content_paste",
-//   component: Reports,
-//   layout: "/admin"
+// STUDENT'S REPORTS
+{
+  path: "/Report",
+  name: "Report",
+  rtlName: "قائمة الجدول",
+  icon: "content_paste",
+  component: Reports,
+  layout: "/admin"
 
-// },
+},
  
 
 //INSTRUCTOR'S DASHBOARD
-    {
-        path: "/dashboard",
-        name: "Dashboard",
-        rtlName: "لوحة القيادة",
-        icon: Dashboard,
-        component: InstructorDashboardPage,
-        layout: "/admin"
-    },
-
-    //INSTRUCTOR'S QB
-  {
-    path: "/QuestionBank",
-    name: "Question Bank",
-    rtlName: "بنك الأسئلة",
-    icon: "content_paste",
-    component: QuestionBank,
-    layout: "/admin"
-  },
-
-    //ADD NEW QUESTION IN QB
     // {
-    //   path: "/AddQuestions",
-    //   name: "Add Questions",
-    //   rtlName: "بنك الأسئلة",
-    //   icon: "content_paste",
-    //   component: AddQuestionPage,
-    //   layout: "/admin"
+    //     path: "/dashboard",
+    //     name: "Dashboard",
+    //     rtlName: "لوحة القيادة",
+    //     icon: Dashboard,
+    //     component: InstructorDashboardPage,
+    //     layout: "/admin"
     // },
 
-    //INSTRUCTOR CREATE A NEW EXAM
-  {
-    path: "/createexam",
-    name: "Create Exam",
-    rtlName: "وضع اختبار",
-    icon: "content_paste",
-    component: CreateExam,
-    layout: "/admin"
+    //INSTRUCTOR'S QB
+  // {
+  //   path: "/QuestionBank",
+  //   name: "Question Bank",
+  //   rtlName: "بنك الأسئلة",
+  //   icon: "content_paste",
+  //   component: QuestionBank,
+  //   layout: "/admin"
+  // },
+
+    // ADD NEW QUESTION IN QB
+    {
+      path: "/AddQuestions",
+      name: "Add Questions",
+      rtlName: "بنك الأسئلة",
+      icon: "content_paste",
+      component: AddQuestionPage,
+      layout: "/admin"
     },
+
+    //INSTRUCTOR CREATE A NEW EXAM
+  // {
+  //   path: "/createexam",
+  //   name: "Create Exam",
+  //   rtlName: "وضع اختبار",
+  //   icon: "content_paste",
+  //   component: CreateExam,
+  //   layout: "/admin"
+  //   },
 
   
 //optional
