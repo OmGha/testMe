@@ -18,7 +18,7 @@ import {
 const sidebarStyle = theme => ({
   drawerPaper: {
     border: "none",
-    position: "fixed",
+    position: "relative",
     top: "0",
     bottom: "0",
     left: "0",
@@ -50,16 +50,6 @@ const sidebarStyle = theme => ({
       ...transition
     }
   },
-  drawerPaperRTL: {
-    [theme.breakpoints.up("md")]: {
-      left: "auto !important",
-      right: "0 !important"
-    },
-    [theme.breakpoints.down("sm")]: {
-      left: "0  !important",
-      right: "auto !important"
-    }
-  },
   logo: {
       position: "relative",
       padding: "23px 5px 14px 5px;",
@@ -75,7 +65,7 @@ const sidebarStyle = theme => ({
       height: "1px",
       right: "15px",
       width: "calc(100% - 30px)",
-      backgroundColor: "rgba(" + hexToRgb(grayColor[6]) + ", 0.3)"
+      // backgroundColor: "rgba(" + hexToRgb(grayColor[6]) + ", 0.3)"
     }
   },
   logoLink: {
@@ -104,14 +94,14 @@ const sidebarStyle = theme => ({
     marginRight: "15px"
   },
   img: {
-      width: "85px",
+      width: "180px",
       top: "11px",
-      right: "178px",
     position: "absolute",
     verticalAlign: "middle",
     border: "0"
   },
   background: {
+    background: "#252529",
     position: "absolute",
     zIndex: "1",
     height: "100%",
@@ -121,16 +111,6 @@ const sidebarStyle = theme => ({
     left: "0",
     backgroundSize: "cover",
     backgroundPosition: "center center",
-    "&:after": {
-      position: "absolute",
-      zIndex: "3",
-      width: "100%",
-      height: "100%",
-      content: '""',
-      display: "block",
-      background: blackColor,
-      opacity: ".8"
-    }
   },
   list: {
     marginTop: "20px",
@@ -198,25 +178,9 @@ const sidebarStyle = theme => ({
     }
   },
   blue: {
-    backgroundColor: infoColor[0],
-    boxShadow:
-      "0 12px 20px -10px rgba(" +
-      hexToRgb(infoColor[0]) +
-      ",.28), 0 4px 20px 0 rgba(" +
-      hexToRgb(blackColor) +
-      ",.12), 0 7px 8px -5px rgba(" +
-      hexToRgb(infoColor[0]) +
-      ",.2)",
+    backgroundColor: "#1765d8",
     "&:hover": {
-      backgroundColor: infoColor[0],
-      boxShadow:
-        "0 12px 20px -10px rgba(" +
-        hexToRgb(infoColor[0]) +
-        ",.28), 0 4px 20px 0 rgba(" +
-        hexToRgb(blackColor) +
-        ",.12), 0 7px 8px -5px rgba(" +
-        hexToRgb(infoColor[0]) +
-        ",.2)"
+      backgroundColor: "#104593",
     }
   },
   green: {
@@ -289,7 +253,7 @@ const sidebarStyle = theme => ({
     position: "relative",
     height: "calc(100vh - 75px)",
     overflow: "auto",
-    width: "260px",
+    width: "225px",
     zIndex: "4",
     overflowScrolling: "touch"
   },
