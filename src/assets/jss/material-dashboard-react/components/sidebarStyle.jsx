@@ -178,9 +178,9 @@ const sidebarStyle = theme => ({
     }
   },
   blue: {
-    backgroundColor: "#1765d8",
+    backgroundColor: "#0D47A1",
     "&:hover": {
-      backgroundColor: "#104593",
+      backgroundColor: "#1765d8",
     }
   },
   green: {
