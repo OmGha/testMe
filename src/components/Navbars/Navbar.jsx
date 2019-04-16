@@ -36,14 +36,15 @@ function Header({ ...props }) {
       <Toolbar className={classes.container}>
         <div className={classes.flex}>
           {/* Here we create navbar brand, based on route name */}
-          <Button color="transparent" href="#" className={classes.title}>
-            {makeBrand()}
-          </Button>
+          <div className={classes.title}>
+          {makeBrand()} <span style={{ margin: "0px 0px 0px 1020px" }} className="marginLeft: 1020px;">Student</span> 
+          </div>
+         
         </div>
-        <Hidden smDown implementation="css">
+        {/* <Hidden smDown implementation="css">
           {props.rtlActive ? <RTLNavbarLinks /> : <AdminNavbarLinks />}
-        </Hidden>
-        <Hidden mdUp implementation="css">
+        </Hidden> */}
+        {/* <Hidden mdUp implementation="css">
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -51,7 +52,7 @@ function Header({ ...props }) {
           >
             <Menu />
           </IconButton>
-        </Hidden>
+        </Hidden> */}
       </Toolbar>
     </AppBar>
   );

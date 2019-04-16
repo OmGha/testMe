@@ -21,7 +21,7 @@ const styles = {
         textAlign: "center"
       },
     loginCard: {
-        width: "30%",
+        width: "70%",
         margin: "0 auto",
         padding: "50px 30px"
       },
@@ -44,7 +44,71 @@ class LoginPage extends React.Component {
     render() {
     const { classes } = this.props;
       return (
-        <GridItem>
+
+
+<GridContainer>
+
+<GridItem xs={3} sm={3} md={3}></GridItem>
+
+                  <GridItem xs={6} sm={6} md={6}>
+            <CustomTabs
+              headerColor="primary"
+              tabs={[
+                {
+                  tabName: "Instructor",
+                  tabContent: (
+                    <Card className={classes.loginCard}>
+            <p style={{ textAlign: "center"}}>
+                <h2 className={classes.cardTitle }>Sign In Here</h2>
+                <Muted>
+                   <h5 className={classes.cardSubtitle}>Instructor's Form</h5>
+                </Muted>
+            </p>
+            <CardBody style={{ margin: "-25px 0 0 0" }}>
+              <Login />
+            </CardBody>
+          </Card>
+                  )
+                },
+                {
+                  tabName: "Student",
+                  tabContent: (
+                    <Card className={classes.loginCard}>
+            <p style={{ textAlign: "center"}}>
+                <h2 className={classes.cardTitle }>Sign In Here</h2>
+                <Muted>
+                   <h5 className={classes.cardSubtitle}>Student's Form</h5>
+                </Muted>
+            </p>
+            <CardBody style={{ margin: "-25px 0 0 0" }}>
+              <Login />
+            </CardBody>
+          </Card>
+                  )
+                },
+                {
+                  tabName: "Admin",
+                  tabContent: (
+                    <Card className={classes.loginCard}>
+            <p style={{ textAlign: "center"}}>
+                <h2 className={classes.cardTitle }>Sign In Here</h2>
+                <Muted>
+                   <h5 className={classes.cardSubtitle}>Admin's Form</h5>
+                </Muted>
+            </p>
+            <CardBody style={{ margin: "-25px 0 0 0" }}>
+              <Login />
+            </CardBody>
+          </Card>
+                  )
+                }
+              ]}
+            />
+          </GridItem>
+
+          <GridItem xs={3} sm={3} md={3}></GridItem>
+
+                  {/* <GridItem>
           <div className={classes.loginTabs}>
             <label className={classes.innerTab}>Instructor</label>
             <label className={classes.innerTab}>Student</label>
@@ -60,7 +124,11 @@ class LoginPage extends React.Component {
               <Login />
             </CardBody>
           </Card>
-        </GridItem>
+        </GridItem> */}
+
+          </GridContainer>
+
+
       );
     }
   }

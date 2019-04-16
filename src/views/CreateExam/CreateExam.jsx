@@ -44,13 +44,13 @@ class CreateExam extends React.Component {
         return (
             <GridContainer>
                 <Card>
-                    <CardHeader color="info">
+                    <CardHeader color="primary">
                     <h4 className={classes.cardTitle}>Creating New Exam</h4>
                     <p>In: System Analysis</p>
                     </CardHeader>
                     <CardBody>
                     <Table
-                        tableHeaderColor="info"
+                        tableHeaderColor="primary"
                         tableHead={['','Question','Duration','Mark']}
                         tableData={[
                             [ <Checkbox
@@ -159,11 +159,14 @@ class CreateExam extends React.Component {
                         }
                     />
                        
-                        <GridItem xs={12} sm={12} md={12}>
-                            <Button type="button" color="success">Submit Exam</Button>
-                        </GridItem>
+                   
                     </CardBody>
                 </Card>
+
+                <GridItem xs={12} sm={12} md={12}>
+                            <Button type="button" color="success"  style={{ margin: "0px 510px" }}>Submit Exam</Button>
+                        </GridItem>
+
             </GridContainer>
         );
     }

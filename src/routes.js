@@ -16,9 +16,42 @@ import QuestionBank from "views/QuestionBank/QuestionBank.jsx";
 import LoginPage from "views/LoginPage/LoginPage.jsx"
 import CreateExam from "./views/CreateExam/CreateExam";
 import AddQuestionPage from "./views/AddQuestionPage/AddQuestionPage.jsx";
+import AdminDashboard from "./views/Admin/AdminDashboard.jsx";
+import AddStudent from "./views/Admin/AddStudent.jsx";
+import AddInstructor from "./views/Admin/AddInstructor.jsx";
 
 
 const dashboardRoutes = [
+
+// ADMIN DASHBOARD
+{
+  path: "/dashboard",
+  name: "Dashboard",
+  rtlName: "لوحة القيادة",
+  icon: Dashboard,
+  component: AdminDashboard,
+  layout: "/admin"
+  },
+
+  // ADMIN ADD STUDENT
+{
+  path: "/addstudent",
+  name: "Add Student",
+  rtlName: "لوحة القيادة",
+  icon: Dashboard,
+  component: AddStudent,
+  layout: "/admin"
+  },
+
+   // ADMIN ADD INSTRUCTOR
+{
+  path: "/addinstructor",
+  name: "Add Instructor",
+  rtlName: "لوحة القيادة",
+  icon: Dashboard,
+  component: AddInstructor,
+  layout: "/admin"
+  },
 
   // LOGIN PAGE
   {
@@ -32,7 +65,7 @@ const dashboardRoutes = [
 
 // STUDENT'S DASHBOARD
 {
-   path: "/dashboard",
+   path: "/Studentdashboard",
    name: "Dashboard",
    rtlName: "لوحة القيادة",
    icon: Dashboard,
@@ -76,24 +109,24 @@ const dashboardRoutes = [
  
 
 //INSTRUCTOR'S DASHBOARD
-    // {
-    //     path: "/dashboard",
-    //     name: "Dashboard",
-    //     rtlName: "لوحة القيادة",
-    //     icon: Dashboard,
-    //     component: InstructorDashboardPage,
-    //     layout: "/admin"
-    // },
+    {
+        path: "/Instructordashboard",
+        name: "Dashboard",
+        rtlName: "لوحة القيادة",
+        icon: Dashboard,
+        component: InstructorDashboardPage,
+        layout: "/admin"
+    },
 
     //INSTRUCTOR'S QB
-  // {
-  //   path: "/QuestionBank",
-  //   name: "Question Bank",
-  //   rtlName: "بنك الأسئلة",
-  //   icon: "content_paste",
-  //   component: QuestionBank,
-  //   layout: "/admin"
-  // },
+  {
+    path: "/QuestionBank",
+    name: "Question Bank",
+    rtlName: "بنك الأسئلة",
+    icon: "content_paste",
+    component: QuestionBank,
+    layout: "/admin"
+  },
 
     // ADD NEW QUESTION IN QB
     {
@@ -106,56 +139,16 @@ const dashboardRoutes = [
     },
 
     //INSTRUCTOR CREATE A NEW EXAM
-  // {
-  //   path: "/createexam",
-  //   name: "Create Exam",
-  //   rtlName: "وضع اختبار",
-  //   icon: "content_paste",
-  //   component: CreateExam,
-  //   layout: "/admin"
-  //   },
-
-  
-//optional
-  // {
-  //   path: "/user",
-  //   name: "User Profile",
-  //   rtlName: "ملف تعريفي للمستخدم",
-  //   icon: Person,
-  //   component: UserProfile,
-  //   layout: "/instructor"
-  // },
-
-  
+  {
+    path: "/createexam",
+    name: "Create Exam",
+    rtlName: "وضع اختبار",
+    icon: "content_paste",
+    component: CreateExam,
+    layout: "/admin"
+    },
 
 
- 
-
-
-  //{
-  //  path: "/icons",
-  //  name: "Icons",
-  //  rtlName: "الرموز",
-  //  icon: BubbleChart,
-  //  component: Icons,
-  //  layout: "/admin"
-  // },
-  //{
-  //  path: "/notifications",
-  //  name: "Notifications",
-  //  rtlName: "إخطارات",
-  //  icon: Notifications,
-  //  component: NotificationsPage,
-  //  layout: "/instructor"
-  //},
-  //{
-  //  path: "/rtl-page",
-  //  name: "RTL Support",
-  //  rtlName: "دعم لغات من اليمين لليسار",
-  //  icon: Language,
-  //  component: RTLPage,
-  //  layout: "/rtl"
-  //}
 ];
 
 export default dashboardRoutes;

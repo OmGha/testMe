@@ -24,24 +24,24 @@ class HeaderLinks extends React.Component {
   state = {
     open: false
   };
-  handleToggle = () => {
-    this.setState(state => ({ open: !state.open }));
-  };
+  // handleToggle = () => {
+  //   this.setState(state => ({ open: !state.open }));
+  // };
 
-  handleClose = event => {
-    if (this.anchorEl.contains(event.target)) {
-      return;
-    }
+  // handleClose = event => {
+  //   if (this.anchorEl.contains(event.target)) {
+  //     handleClosereturn;
+  //   }
 
-    this.setState({ open: false });
-  };
+  //   this.setState({ open: false });
+  // };
 
   render() {
     const { classes } = this.props;
     const { open } = this.state;
     return (
       <div>
-        <div className={classes.searchWrapper}>
+        {/* <div className={classes.searchWrapper}>
           <CustomInput
             formControlProps={{
               className: classes.margin + " " + classes.search
@@ -56,8 +56,8 @@ class HeaderLinks extends React.Component {
           <Button color="white" aria-label="edit" justIcon round>
             <Search />
           </Button>
-        </div>
-        <Button
+        </div> */}
+        {/* <Button
           color={window.innerWidth > 959 ? "transparent" : "white"}
           justIcon={window.innerWidth > 959}
           simple={!(window.innerWidth > 959)}
@@ -68,8 +68,8 @@ class HeaderLinks extends React.Component {
           <Hidden mdUp implementation="css">
             <p className={classes.linkText}>Dashboard</p>
           </Hidden>
-        </Button>
-        <div className={classes.manager}>
+        </Button> */}
+        {/* <div className={classes.manager}>
           <Button
             buttonRef={node => {
               this.anchorEl = node;
@@ -149,8 +149,8 @@ class HeaderLinks extends React.Component {
               </Grow>
             )}
           </Poppers>
-        </div>
-        <Button
+        </div> */}
+        {/* <Button
           color={window.innerWidth > 959 ? "transparent" : "white"}
           justIcon={window.innerWidth > 959}
           simple={!(window.innerWidth > 959)}
@@ -161,7 +161,7 @@ class HeaderLinks extends React.Component {
           <Hidden mdUp implementation="css">
             <p className={classes.linkText}>Profile</p>
           </Hidden>
-        </Button>
+        </Button> */}
       </div>
     );
   }

@@ -136,7 +136,7 @@ class AddQuestion extends React.Component {
                 <Button style={{bottom: "-30px"}} type="button" color="primary">Add MultiMedia</Button>
             </GridItem>
             <GridItem style={{textAlign: "center", margin: "20px 0 0 0"}} xs={12} sm={12} md={12}>
-                <Button style={{textAlign: "center"}} type="button" color="primary">Submit Question</Button>
+                <Button style={{textAlign: "center"}} type="button" round color="success" size="md" >Submit Question</Button>
             </GridItem>
         </GridContainer>
       );

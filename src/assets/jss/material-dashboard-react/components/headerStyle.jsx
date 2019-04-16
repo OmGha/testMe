@@ -13,8 +13,8 @@ import {
 
 const headerStyle = theme => ({
   appBar: {
-    backgroundColor: "transparent",
-    boxShadow: "none",
+    backgroundColor: "#ffffff",
+    boxShadow: "-7px 6px 10px 1px #cecece",
     borderBottom: "0",
     marginBottom: "0",
     position: "absolute",
@@ -23,7 +23,6 @@ const headerStyle = theme => ({
     zIndex: "1029",
     color: grayColor[7],
     border: "0",
-    borderRadius: "3px",
     padding: "10px 0",
     transition: "all 150ms ease 0s",
     minHeight: "50px",
@@ -37,9 +36,9 @@ const headerStyle = theme => ({
     flex: 1
   },
   title: {
-    ...defaultFont,
     lineHeight: "30px",
     fontSize: "18px",
+    fontWeight: "500",
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",

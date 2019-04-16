@@ -55,7 +55,7 @@ function QuestionBank (props) {
           <CardBody>
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
-          <Button color="warning">View and Edit</Button>
+          <Button color="warning">Add Question</Button>
           <Button color="warning">Create Exam</Button>
           </CardBody>
         </Card>
@@ -71,7 +71,7 @@ function QuestionBank (props) {
           <CardBody>
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
-            <Button color="primary">View and Edit</Button>
+            <Button color="primary">Add Question</Button>
             <Button color="primary">Create Exam</Button>
           </CardBody>
         </Card>
@@ -87,7 +87,7 @@ function QuestionBank (props) {
           <CardBody>
             <div>Description Description Description Description Description Description Description Description Description Description            
 </div>
-          <Button color="danger">View and Edit</Button>
+          <Button color="danger">Add Question</Button>
           <Button color="danger">Create Exam</Button>
           </CardBody>
         </Card>
@@ -103,7 +103,7 @@ function QuestionBank (props) {
           <CardBody>
             <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
 </div>
-          <Button color="info">View and Edit</Button>
+          <Button color="info">Add Question</Button>
           <Button color="info">Create Exam</Button>
           </CardBody>
         </Card>
