@@ -51,7 +51,7 @@ class CreateExam extends React.Component {
                     <CardBody>
                     <Table
                         tableHeaderColor="primary"
-                        tableHead={['','Question','Duration','Mark']}
+                        tableHead={['','Question', '(a)', '(b)', '(c)', '(d)', 'Model Answer', 'Duration','Mark', 'Added By']}
                         tableData={[
                             [ <Checkbox
                         tabIndex={-1}
@@ -61,9 +61,8 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        /> , <p>A ... entity has a primary key that is partially or totally derived from the parent entity in the relationship</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+                        /> , <p>A ... entity has a primary key that is partially or totally derived from the parent entity in the relationship</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat'],
 
                             [ <Checkbox
                         tabIndex={-1}
@@ -73,22 +72,8 @@ class CreateExam extends React.Component {
                         classes={{
                             checked: classes.checked,
                         }}
-                        /> , <p>Weak entities are used in entity relationship diagrams and are denoted by...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
-
-                            [ <Checkbox
-                        tabIndex={-1}
-                        onClick={this.handleToggle(1)}
-                        checkedIcon={<Check className={classes.checkedIcon}/>}
-                        icon={<Check className={classes.uncheckedIcon}/>}
-                        classes={{
-                            checked: classes.checked,
-                        }}
-                        /> ,
-                        <p>Derived attributes in entity relationship diagrams are denoted by...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+                        /> , <p>Weak entities are used in entity relationship diagrams and are denoted by...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ] ,
 
                             [ <Checkbox
                         tabIndex={-1}
@@ -99,9 +84,8 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         /> ,
-                        <p>Relationship between weak entity set and identifying entity set's association is known as...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+                        <p>Derived attributes in entity relationship diagrams are denoted by...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat'] ,
 
                             [ <Checkbox
                         tabIndex={-1}
@@ -112,9 +96,8 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         /> ,
-                        <p>A rectangle represents which of the following in an ERD...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+                        <p>Relationship between weak entity set and identifying entity set's association is known as...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ] ,
 
                             [ <Checkbox
                         tabIndex={-1}
@@ -125,9 +108,20 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         /> ,
-                        <p>In an ERD, the focus is on the ... and the relationships between them</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ]
+                        <p>A rectangle represents which of the following in an ERD...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ] ,
+
+                            [ <Checkbox
+                        tabIndex={-1}
+                        onClick={this.handleToggle(1)}
+                        checkedIcon={<Check className={classes.checkedIcon}/>}
+                        icon={<Check className={classes.uncheckedIcon}/>}
+                        classes={{
+                            checked: classes.checked,
+                        }}
+                        /> ,
+                        <p>In an ERD, the focus is on the ... and the relationships between them</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ]
                         ,
                         
                         [ <Checkbox
@@ -139,9 +133,8 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         /> ,
-                        <p>Which of the following might be represented with a multivalued attribute...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ] ,
+                        <p>Which of the following might be represented with a multivalued attribute...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ] ,
 
                         [ <Checkbox
                         tabIndex={-1}
@@ -152,9 +145,8 @@ class CreateExam extends React.Component {
                             checked: classes.checked,
                         }}
                         /> ,
-                        <p>An entity set that may not have sufficient attributes to form a primary key is called...</p> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "2 Min" }} formControlProps={{ fullWidth: false }} /> ,
-                        <CustomInput id="regular" inputProps={{ placeholder: "5 Marks" }} formControlProps={{ fullWidth: false }} /> ]
+                        <p>An entity set that may not have sufficient attributes to form a primary key is called...</p> , 'First Answer',
+                        'Second Answer', 'Third Answer', 'Fourth Answer', 'Model Answer', '2 min', '5 marks', 'Dr. Gamal Tharwat' ]
                         ]
                         }
                     />

@@ -54,14 +54,14 @@ const dashboardRoutes = [
   },
 
   // LOGIN PAGE
-  {
-   path: "/login",
-   name: "Login",
-   rtlName: "لوحة القيادة",
-   icon: Dashboard,
-   component: LoginPage,
-   layout: "/admin"
-   },
+  // {
+  //  path: "/login",
+  //  name: "Login",
+  //  rtlName: "لوحة القيادة",
+  //  icon: Dashboard,
+  //  component: LoginPage,
+  //  layout: "/admin"
+  //  },
 
 // STUDENT'S DASHBOARD
 {

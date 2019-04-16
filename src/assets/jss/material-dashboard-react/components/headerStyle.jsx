@@ -13,7 +13,7 @@ import {
 
 const headerStyle = theme => ({
   appBar: {
-    backgroundColor: "#ffffff",
+    backgroundColor: "#252429",
     boxShadow: "-7px 6px 10px 1px #cecece",
     borderBottom: "0",
     marginBottom: "0",
@@ -21,7 +21,7 @@ const headerStyle = theme => ({
     width: "100%",
     paddingTop: "10px",
     zIndex: "1029",
-    color: grayColor[7],
+    color: "#ffffff",
     border: "0",
     padding: "10px 0",
     transition: "all 150ms ease 0s",

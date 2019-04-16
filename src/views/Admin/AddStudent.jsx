@@ -36,10 +36,7 @@ class AddStudent extends React.Component {
       return (
         <Card className={classes.addQuestionCard}>
         <p style={{ textAlign: "center"}}>
-            <h2 className={classes.cardTitle }>Add a New Question</h2>
-            <Muted>
-                <h5 className={classes.cardSubtitle}>In: System Analysis</h5>
-            </Muted>
+            <h2 className={classes.cardTitle }>Add a New Student</h2>
         </p>
         <CardBody style={{ margin: "-25px 0 0 0" }}>
         <GridContainer>
@@ -66,6 +63,18 @@ class AddStudent extends React.Component {
                     }} />
             </GridItem>
 
+
+            <GridItem xs={12} sm={12} md={12}>
+                <CustomInput labelText="E-mail" id="material" formControlProps={{
+                        fullWidth: true
+                    }}
+                    inputProps={{
+                        endAdornment: (
+                        <InputAdornment position="end">
+                        </InputAdornment>
+                        )
+                    }} />
+            </GridItem>
  
             <GridItem xs={12} sm={6} md={6}>
                 <CustomInput labelText="User Name" id="material" formControlProps={{

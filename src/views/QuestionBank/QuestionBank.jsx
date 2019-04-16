@@ -44,70 +44,35 @@ function QuestionBank (props) {
   const { classes } = props;
   return (
     <GridContainer>
-      <GridItem xs={12} sm={6} md={4}>
-        <Card>
-          <CardHeader color="warning">
-            <h4 className={classes.cardTitleWhite}>System Analysis</h4>
-            <p className={classes.cardCategoryWhite}>
-              Computer Science, Secound Year
-            </p>
-          </CardHeader>
-          <CardBody>
-            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
-</div>
-          <Button color="warning">Add Question</Button>
-          <Button color="warning">Create Exam</Button>
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={6} md={4}>
-        <Card>
-          <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>System Design</h4>
-            <p className={classes.cardCategoryWhite}>
-              Computer Science, Third Year
-            </p>
-          </CardHeader>
-          <CardBody>
-            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
-</div>
-            <Button color="primary">Add Question</Button>
-            <Button color="primary">Create Exam</Button>
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={6} md={4}>
-        <Card>
-          <CardHeader color="danger">
-            <h4 className={classes.cardTitleWhite}>تصميم وتحليل النظم</h4>
-            <p className={classes.cardCategoryWhite}>
-              Information System, Third Year
-            </p>
-          </CardHeader>
-          <CardBody>
-            <div>Description Description Description Description Description Description Description Description Description Description            
-</div>
-          <Button color="danger">Add Question</Button>
-          <Button color="danger">Create Exam</Button>
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={6} md={4}>
-        <Card>
-          <CardHeader color="info">
-            <h4 className={classes.cardTitleWhite}>Expert Systems</h4>
-            <p className={classes.cardCategoryWhite}>
-              Computer Science, Fourth Year
-            </p>
-          </CardHeader>
-          <CardBody>
-            <div>Description Description Description Description Description Description Description Description Description Description Description Description Description
-</div>
-          <Button color="info">Add Question</Button>
-          <Button color="info">Create Exam</Button>
-          </CardBody>
-        </Card>
-      </GridItem>
+
+
+    <GridItem xs={12} sm={12} md={12}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Question Bank</h4>
+                    </CardHeader>
+                    <CardBody>
+                        <Table
+                            tableHeaderColor="primary"
+                                tableHead={["Course Name", "Department", "Year", "", ""]}
+                            tableData={[
+                                ["System Analysis", "Computer Science", "Second Year", <Button type="button" color="success" size="sm">Add Question</Button>, <Button type="button" color="success" size="sm">Create Exam</Button>],
+                                ["System Design", "Computer Science", "Third  Year", <Button type="button" color="success" size="sm">Add Question</Button>, <Button type="button" color="success" size="sm">Create Exam</Button>],
+                                ["تصميم وتحليل النظم", "Information System", "Third Year", <Button type="button" color="success" size="sm">Add Question</Button>, <Button type="button" color="success" size="sm">Create Exam</Button>],
+                                ["Expert Systems", "Computer Science", "Fourth  Year", <Button type="button" color="success" size="sm">Add Question</Button>, <Button type="button" color="success" size="sm">Create Exam</Button>]
+
+
+                            ]}
+                        />
+                    </CardBody>
+                </Card>
+                </GridItem>
+
+
+
+
+
+     
     
     </GridContainer>
   );
