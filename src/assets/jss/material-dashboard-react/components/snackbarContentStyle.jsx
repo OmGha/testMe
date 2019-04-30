@@ -1,18 +1,14 @@
 import {
   defaultFont,
   primaryBoxShadow,
-  infoBoxShadow,
   successBoxShadow,
   warningBoxShadow,
   dangerBoxShadow,
-  roseBoxShadow,
   whiteColor,
   blackColor,
   grayColor,
-  infoColor,
   successColor,
   dangerColor,
-  roseColor,
   primaryColor,
   warningColor,
   hexToRgb
@@ -47,11 +43,6 @@ const snackbarContentStyle = {
   top40: {
     top: "40px"
   },
-  info: {
-    backgroundColor: infoColor[3],
-    color: whiteColor,
-    ...infoBoxShadow
-  },
   success: {
     backgroundColor: successColor[3],
     color: whiteColor,
@@ -71,11 +62,6 @@ const snackbarContentStyle = {
     backgroundColor: primaryColor[3],
     color: whiteColor,
     ...primaryBoxShadow
-  },
-  rose: {
-    backgroundColor: roseColor[3],
-    color: whiteColor,
-    ...roseBoxShadow
   },
   message: {
     padding: "0",
@@ -100,9 +86,6 @@ const snackbarContentStyle = {
     width: "30px",
     height: "30px"
   },
-  infoIcon: {
-    color: infoColor[3]
-  },
   successIcon: {
     color: successColor[3]
   },
@@ -115,16 +98,9 @@ const snackbarContentStyle = {
   primaryIcon: {
     color: primaryColor[3]
   },
-  roseIcon: {
-    color: roseColor[3]
-  },
   iconMessage: {
     paddingLeft: "50px",
     display: "block"
-  },
-  actionRTL: {
-    marginLeft: "-8px",
-    marginRight: "auto"
   }
 };
 

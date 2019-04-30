@@ -24,10 +24,11 @@ class AdminDashboard extends React.Component {
             <GridContainer>
 
 
-            <Popup trigger={<div style= {{textAlign: "center", margin: "0px 1070px"}}>
-  <Button round color="success" size="md">Add</Button>
-</div>} modal>
-    {close => (
+            <Popup trigger={
+              <div style= {{textAlign: "center", margin: "0px 1070px"}}>
+                <Button round color="success" size="md">Add</Button>
+              </div>} modal>
+      {close => (
       <div className="modal">
         <div className="header"> <h3>Add New User</h3> </div>
         <div className="content">

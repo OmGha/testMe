@@ -12,7 +12,6 @@ import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import Muted from "components/Typography/Muted.jsx";
-import Info from "components/Typography/Info.jsx";
 import Countdown from 'components/Countdown/Countdown.js';
 import Checkbox from "@material-ui/core/Checkbox";
 // @material-ui/icons
@@ -477,7 +476,6 @@ handleChange = event => {
       <div className="modal">
         <div className="header"> <h3>Confirmation Message</h3> </div>
         <div className="content">
-          {' '}
          <h4>Are You Sure You Want To Submit The Exam?</h4>
         </div>
         <div className="actions">

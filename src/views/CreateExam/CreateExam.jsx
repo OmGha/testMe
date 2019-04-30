@@ -11,13 +11,9 @@ import checkboxAdnRadioStyle from "assets/jss/material-dashboard-react/checkboxA
 
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import CardIcon from "components/Card/CardIcon.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Table from "components/Table/Table.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-
 
 
 class CreateExam extends React.Component {

@@ -1,19 +1,3 @@
-/*!
-
- =========================================================
- * Material Dashboard React - v1.6.0 based on Material Dashboard - v1.2.0
- =========================================================
-
- * Product Page: http://www.creative-tim.com/product/material-dashboard-react
- * Copyright 2018 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-dashboard-react/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
 // ##############################
 // // // Function that converts from hex color to rgb color
 // // // Example: input = #9c27b0 => output = 156, 39, 176
@@ -47,10 +31,6 @@ const hexToRgb = input => {
   );
 };
 
-// ##############################
-// // // Variables - Styles that are used on more than one component
-// #############################
-
 const drawerWidth = 225;
 
 const transition = {
@@ -75,8 +55,6 @@ const primaryColor = ["#0d47a1", "#0d47a1", "#0d47a1", "0d47a1"];
 const warningColor = ["#ff9800", "#ffa726", "#fb8c00", "#ffa21a"];
 const dangerColor = ["#f44336", "#ef5350", "#e53935", "#f55a4e"];
 const successColor = ["#4caf50", "#66bb6a", "#43a047", "#5cb860"];
-const infoColor = ["#00acc1", "#26c6da", "#00acc1", "#00d3ee"];
-const roseColor = ["#e91e63", "#ec407a", "#d81b60", "#eb3573"];
 const grayColor = [
   "#999",
   "#777",
@@ -113,14 +91,6 @@ const primaryBoxShadow = {
     hexToRgb(primaryColor[0]) +
     ",.4)"
 };
-const infoBoxShadow = {
-  boxShadow:
-    "0 4px 20px 0 rgba(" +
-    hexToRgb(blackColor) +
-    ",.14), 0 7px 10px -5px rgba(" +
-    hexToRgb(infoColor[0]) +
-    ",.4)"
-};
 const successBoxShadow = {
   boxShadow:
     "0 4px 20px 0 rgba(" +
@@ -145,44 +115,20 @@ const dangerBoxShadow = {
     hexToRgb(dangerColor[0]) +
     ",.4)"
 };
-const roseBoxShadow = {
-  boxShadow:
-    "0 4px 20px 0 rgba(" +
-    hexToRgb(blackColor) +
-    ",.14), 0 7px 10px -5px rgba(" +
-    hexToRgb(roseColor[0]) +
-    ",.4)"
-};
-
 const warningCardHeader = {
   background:
     "linear-gradient(60deg, " + warningColor[1] + ", " + warningColor[2] + ")",
   ...warningBoxShadow
-};
-const successCardHeader = {
-  background:
-    "linear-gradient(60deg, " + successColor[1] + ", " + successColor[2] + ")",
-  ...successBoxShadow
 };
 const dangerCardHeader = {
   background:
     "linear-gradient(60deg, " + dangerColor[1] + ", " + dangerColor[2] + ")",
   ...dangerBoxShadow
 };
-const infoCardHeader = {
-  background:
-    "linear-gradient(60deg, " + infoColor[1] + ", " + infoColor[2] + ")",
-  ...infoBoxShadow
-};
 const primaryCardHeader = {
   background:
     "linear-gradient(60deg, " + primaryColor[1] + ", " + primaryColor[2] + ")",
   ...primaryBoxShadow
-};
-const roseCardHeader = {
-  background:
-    "linear-gradient(60deg, " + roseColor[1] + ", " + roseColor[2] + ")",
-  ...roseBoxShadow
 };
 
 const cardActions = {
@@ -273,26 +219,19 @@ export {
   card,
   defaultFont,
   primaryColor,
+  successColor,
   warningColor,
   dangerColor,
-  successColor,
-  infoColor,
-  roseColor,
   grayColor,
   blackColor,
   whiteColor,
   primaryBoxShadow,
-  infoBoxShadow,
   successBoxShadow,
   warningBoxShadow,
   dangerBoxShadow,
-  roseBoxShadow,
   warningCardHeader,
-  successCardHeader,
   dangerCardHeader,
-  infoCardHeader,
   primaryCardHeader,
-  roseCardHeader,
   cardActions,
   cardHeader,
   defaultBoxShadow,

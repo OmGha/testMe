@@ -1,8 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/core components
-import Grid from "@material-ui/core/Grid";
 import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import People from "@material-ui/icons/People";
@@ -24,7 +21,7 @@ class Login extends React.Component {
       return (
         <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-                <CustomInput name="userName" labelText="User Name" id="material" formControlProps={{
+                <CustomInput name="userName" labelText="User Name" id="name" formControlProps={{
                         fullWidth: true
                     }}
                     inputProps={{
@@ -36,7 +33,7 @@ class Login extends React.Component {
                     }} />
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
-                <CustomInput labelText="Password" id="material" formControlProps={{
+                <CustomInput labelText="Password" id="password" formControlProps={{
                         fullWidth: true
                     }}
                     inputProps={{

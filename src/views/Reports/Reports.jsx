@@ -7,24 +7,9 @@ import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import Table from "components/Table/Table.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import Muted from "components/Typography/Muted.jsx";
-import Info from "components/Typography/Info.jsx";
-import Countdown from 'components/Countdown/Countdown.js';
-import Checkbox from "@material-ui/core/Checkbox";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
-import Radio from "@material-ui/core/Radio";
-// @material-ui/icons
-import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
-//core components
 import checkboxAdnRadioStyle from "assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx";
-import NavigateBefore from "@material-ui/icons/NavigateBefore";
-import NavigateNext from "@material-ui/icons/NavigateNext";
-import Translate from "@material-ui/icons/Translate";
-import Tooltip from "@material-ui/core/Tooltip";
 import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
 import tasksStyle from 'assets/jss/material-dashboard-react/components/tasksStyle.jsx';
 
@@ -92,7 +77,7 @@ handleChange = event => {
   
     
     
-    <GridItem xs={12} sm={12} md={12}>
+        <GridItem xs={12} sm={12} md={12}>
         <Card className={classes.textCenter}>
           <CardBody>
           
@@ -107,11 +92,6 @@ handleChange = event => {
          
         </Card>
         </GridItem>
-
-
-
-
-
         <GridItem xs={12} sm={12} md={12}>
                 <Card>
                     <CardHeader color="danger">

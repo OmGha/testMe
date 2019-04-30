@@ -3,8 +3,6 @@ import {
   primaryColor,
   dangerColor,
   successColor,
-  infoColor,
-  roseColor,
   grayColor,
   defaultFont
 } from "assets/jss/material-dashboard-react.jsx";
@@ -21,12 +19,6 @@ const tableStyle = theme => ({
   },
   successTableHeader: {
     color: successColor[0]
-  },
-  infoTableHeader: {
-    color: infoColor[0]
-  },
-  roseTableHeader: {
-    color: roseColor[0]
   },
   grayTableHeader: {
     color: grayColor[0]

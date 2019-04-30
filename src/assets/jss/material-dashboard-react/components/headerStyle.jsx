@@ -1,14 +1,11 @@
 import {
   container,
-  defaultFont,
   primaryColor,
   defaultBoxShadow,
-  infoColor,
   successColor,
   warningColor,
   dangerColor,
-  whiteColor,
-  grayColor
+  whiteColor
 } from "assets/jss/material-dashboard-react.jsx";
 
 const headerStyle = theme => ({
@@ -52,11 +49,6 @@ const headerStyle = theme => ({
   },
   primary: {
     backgroundColor: primaryColor[0],
-    color: whiteColor,
-    ...defaultBoxShadow
-  },
-  info: {
-    backgroundColor: infoColor[0],
     color: whiteColor,
     ...defaultBoxShadow
   },
